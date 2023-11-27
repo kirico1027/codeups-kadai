@@ -18,6 +18,10 @@
   <meta property="og:description" content="" />
   <!-- ファビコン -->
   <link rel="”icon”" href="" />
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gotu&family=Lato:wght@400;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
   <!-- css -->
   <link rel="stylesheet" href="./assets/css/style.css" />
   <!-- JavaScript -->
@@ -25,12 +29,97 @@
   <script defer src="./assets/js/script.js"></script>
 </head>
 <body>
-  <header>
+  <header class="header">
+    <div class="header__inner">
+      <h1 class="header__logo">
+        <a href="#">
+          <img src="./assets/images/common/logo.svg" alt="CodeUps">
+        </a>
+      </h1>
+      <nav class="header__nav">
+        <ul class="header__nav-items">
+          <li class="header__nav-item">
+            <a href="#">Campaign<span>キャンペーン</span></a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#">About&emsp;us<span>私たちについて</span></a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#">Information<span>ダイビング情報</span></a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#">Blog<span>ブログ</span></a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#">Voice<span>お客様の声</span></a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#">Price<span>料金一覧</span></a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#">FAQ<span>よくある質問</span></a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#">Contact<span>お問合せ</span></a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__hamburger js-hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="header__drawer js-drawer">
+        <nav class="header__drawer-nav">
+          <div class="header__drawer-items">
+            <div class="header__drawer-left">
+              <div class="header__drawer-block">
+                <div class="header__drawer-item header__drawer-item--main">
+                  <a href="#">キャンペーン</a>
+                </div>
+                <div class="header__drawer-item">
+                  <a href="#">ライセンス取得</a>
+                </div>
+                <div class="header__drawer-item">
+                  <a href="#">貸切体験ダイビング</a>
+                </div>
+                <div class="header__drawer-item">
+                  <a href="#">ナイトダイビング</a>
+                </div>
+              </div>
+              <div class="header__drawer-item header__drawer-item--main">
+                <a href="#">私たちについて</a>
+              </div>
+              <div class="header__drawer-block">
+                <div class="header__drawer-item header__drawer-item--main">
+                  <a href="#">ダイビング情報</a>
+                </div>
+                <div class="header__drawer-item">
+                  <a href="#">ライセンス講習</a>
+                </div>
+                <div class="header__drawer-item">
+                  <a href="#">体験ダイビング</a>
+                </div>
+                <div class="header__drawer-item">
+                  <a href="#">ファンダイビング</a>
+                </div>
+              </div>
+              <div class="header__drawer-item header__drawer-item--main">
+                <a href="#">ブログ</a>
+              </div>
+            </div>
+            <div class="header__drawer-right">
 
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
   </header>
+
   <main>
     <div class="inner">
-      <p class="test">変更のテスト</p>
+     
     </div>
   </main>
   <footer>
