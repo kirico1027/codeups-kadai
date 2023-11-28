@@ -70,7 +70,7 @@
 .footer__nav {
   padding-left: rem(22);
   margin-top: rem(40);
-  width: rem(345);
+  width: calc(345 / 374 * 100vw);
   margin: auto;
 
   @include mq(md) {
@@ -104,6 +104,7 @@
 
 .footer__nav-items {
   display: flex;
+  justify-content: center;
   column-gap: calc(35 /375 * 100vw);
 
   @include mq(md) {
