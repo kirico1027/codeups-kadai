@@ -137,18 +137,21 @@
   background-color: $accent-color;
 }
 
-.header__drawer::-webkit-scrollbar {
-  display: none;
-}
-
 .header__drawer-nav {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
-  padding: 0 rem(37);
+  left: 50%;
+  transform: translate(-50%,-50%);
+  padding-left: rem(22);
+  width: rem(338);
 }
 
-.header__drawer-left {
+.header__drawer-items {
+  display: flex;
+  column-gap: rem(30);
+}
+
+.header__drawer-content {
   display: flex;
   flex-direction: column;
   row-gap: rem(40);
@@ -172,4 +175,17 @@
 
 .header__drawer-item--main a {
   font-weight: $bold;
+  position: relative;
+}
+
+.header__drawer-item--main a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: rem(-22);
+  background-image: url(../images/common/drawer-starfish.png);
+  background-size: cover;
+  width: rem(18);
+  height: rem(18);
+  z-index: 1;
 }
