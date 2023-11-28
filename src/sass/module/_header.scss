@@ -12,7 +12,8 @@
   background-color: rgba(13, 41, 54, 0.68);
 
   @include mq("md") {
-    height: rem(70);
+    padding: 0 rem(40);
+    height: rem(90);
   }
 }
 
@@ -23,7 +24,7 @@
   z-index: 9999;
 
   @include mq("md") {
-    max-width: rem(100);
+    max-width: rem(133);
   }
 }
 
@@ -58,22 +59,47 @@
 }
 
 .header__nav-item a {
-  padding: 0 rem(15);
   height: inherit;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   font-size: rem(18);
-  font-weight: 500;
+  font-family: $second-font-family;
+  font-weight: $regular;
   line-height: 1;
-  color: #333;
+  color: $white;
+  position: relative;
+}
+
+.header__nav-item:not(:first-child) a {
+  margin-left: rem(40);
+}
+
+.header__nav-item a::after {
+  content: '';
+  position: absolute;
+  bottom: rem(20);
+  left: 0;
+  width: 100%;
+  height: 1px;
+  border-radius: 4px;
+  background: $white;
+  transition: transform 0.3s;
+  transform: scale(0, 1);/*X方向0、Y方向1*/
+  transform-origin: center top;/*上部中央基点*/
+}
+
+.header__nav-item a:hover::after {
+  transform: scale(1, 1);
+  /*X方向にスケール拡大*/
 }
 
 .header__nav-item span {
   margin-top: rem(10);
   display: block;
-  font-size: rem(12);
+  font-size: rem(10);
+  font-family: $base-font-family;
 }
 
 .header__hamburger {
@@ -170,7 +196,7 @@
   font-weight: $regular;
   line-height: 1;
   letter-spacing: 0.05em;
-  color: #fff;
+  color: $white;
 }
 
 .header__drawer-item--main a {
@@ -187,5 +213,4 @@
   background-size: cover;
   width: rem(18);
   height: rem(18);
-  z-index: 1;
 }
