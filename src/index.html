@@ -23,9 +23,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Gotu&family=Lato:wght@400;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
   <!-- css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./assets/css/style.css" />
   <!-- JavaScript -->
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script defer src="./assets/js/script.js"></script>
 </head>
 <body>
@@ -148,6 +150,57 @@
   </header>
 
   <main>
+
+    <section class="mv">
+      <div class="mv__inner">
+        <div class="mv__title-wrap">
+          <h2 class="mv__main-title">diving</h2>
+          <p class="mv__sub-title">into&nbsp;the&nbsp;ocean</p>
+        </div>
+        <div class="mv__swiper swiper js-mv-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <picture class="swiper-img">
+                <source srcset="/assets/images/common/mv-pc01.jpg" media="(min-width: 768px)" type="image/jpg">
+                <img src="./assets/images/common/mv01.jpg" alt="海底を泳ぐウミガメの画像" loading="lazy">
+              </picture>
+            </div>
+            <div class="swiper-slide">
+              <picture class="swiper-img">
+                <source srcset="/assets/images/common/mv-pc02.jpg" media="(min-width: 768px)" type="image/jpg">
+                <img src="./assets/images/common/mv02.jpg" alt="泳ぐウミガメを下から見た画像" loading="lazy">
+              </picture>
+            </div>
+            <div class="swiper-slide">
+              <picture class="swiper-img">
+                <source srcset="/assets/images/common/mv-pc03.jpg" media="(min-width: 768px)" type="image/jpg">
+                <img src="./assets/images/common/mv03.jpg" alt="青い空と青い海の真ん中を行く白い船の画像" loading="lazy">
+              </picture>
+            </div>
+            <div class="swiper-slide">
+              <picture class="swiper-img">
+                <source srcset="/assets/images/common/mv-pc04.jpg" media="(min-width: 768px)" type="image/jpg">
+                <img src="./assets/images/common/mv04.jpg" alt="青い空と白い砂浜と美しいグラデーションの海の画像" loading="lazy">
+              </picture>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <div class="inner">
       <h2 class="section-title">
         <p class="section-title__main"><span>A</span>bout&nbsp;us</p>
