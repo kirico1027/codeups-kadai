@@ -1,0 +1,29 @@
+@use "global" as *;
+
+.section-title {
+  margin-top: rem(200);
+}
+
+.section-title__main {
+  font-family: $second-font-family;
+  font-size: rem(40);
+  font-weight: $regular;
+  line-height: 1;
+  color: $title-color;
+  text-align: center;
+}
+
+.section-title__main span {
+  color: $accent-color;
+}
+
+.section-title__sub {
+  font-family: $base-font-family;
+  font-size: rem(12);
+  font-weight: $regular;
+  line-height: calc(18 / 12);
+  color: $accent-color;
+  text-align: center;
+  margin-top: rem(8);
+}
+
