@@ -1,0 +1,40 @@
+@use "global" as *;
+
+.campaign-swiper__button-wrap {
+    margin-top: prem(70);
+    display: flex;
+    justify-content: left;
+}
+
+.campaign-swiper__button-wrap .swiper-button-prev,
+.campaign-swiper__button-wrap .swiper-button-next {
+    position: relative;
+    width: prem(100);
+    height: prem(100);
+    background-color: #fff9ee;
+    border-radius: 50%;
+}
+
+.campaign-swiper__button-wrap .swiper-button-next {
+    margin-left: prem(100);
+}
+
+.campaign-swiper__button-wrap .swiper-button-prev::before,
+.campaign-swiper__button-wrap .swiper-button-next::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: prem(13);
+    height: prem(13);
+    border-top: prem(3) solid #333;
+    border-right: prem(3) solid #333;
+}
+
+.campaign-swiper__button-wrap .swiper-button-prev::before {
+    transform: translate(-50%, -50%) rotate(-135deg);
+}
+
+.campaign-swiper__button-wrap .swiper-button-next::before {
+    transform: translate(-50%, -50%) rotate(45deg);
+}

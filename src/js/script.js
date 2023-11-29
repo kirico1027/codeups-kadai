@@ -53,5 +53,46 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     });
   });
 
+  // campaign-swiper
+  jQuery(function ($) {
+    // リサイズ処理（PC時のみ矢印表示）
+    const campaign_slideLength = document.querySelectorAll(
+      ".js-campaign-swiper .swiper-slide"
+    ).length;
+    $(window).resize(function () {
+      campaign_arrow();
+    });
+    campaign_arrow();
+    function campaign_arrow() {
+      if (window.matchMedia("(max-width: 767px)").matches || campaign_slideLength <= 3) {
+        $(".js-campaign-arrow").hide();
+      } else {
+        $(".js-campaign-arrow").show();
+      }
+    }
+
+    // Swiper
+    var service_swiper = new Swiper(".js-campaign-swiper", {
+      loop: true,
+      speed: 2000,
+      slidesPerView: 1.5,
+      spaceBetween: 20,
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      },
+      breakpoints: {
+        768: {
+          slidesPerView: 3.5,
+          spaceBetween: 40,
+        },
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  });
+
 
 });
