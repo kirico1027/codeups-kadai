@@ -1,0 +1,49 @@
+@use "global" as *;
+
+.button__inner {
+  margin-top: rem(200);
+}
+
+.button {
+  display: inline-block;
+  width: 202px;
+  padding: 15px 40px;
+  font-size: 14px;
+  font-family: $second-font-family;
+  font-weight: $regular;
+  border: solid 1px $accent-color;
+  line-height: calc(22 /14 );
+  transition: 0.3s;
+  background-color: $accent-color;
+  color: $white;
+  cursor: pointer;
+  position: relative;
+}
+
+.button::before {
+  position: absolute;
+  content: "";
+  top: 4px;
+  left: 4px;
+  width: calc(100% + 2px);
+  height: calc(100% + 2px);
+  border: solid 1px $accent-color;
+}
+
+.button span {
+  position: relative;
+}
+
+.button span::after {
+  position: absolute;
+  content: "";
+  top: calc(50% - 2px);
+  transform: translateY(-50%);
+  right: -48px;
+  background-image: url(../images/common/arrow-white.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 40px;
+  height: 6px;
+}
+
