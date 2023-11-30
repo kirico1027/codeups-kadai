@@ -5,44 +5,62 @@
 }
 
 .campaign-swiper__button-wrap {
-  display: none!important;
-   display: flex;
-  justify-content: left;
+  display: flex;
+  position: absolute;
+  right: calc(50% - rem(370));
+  top: rem(-78);
+}
+
+.campaign-swiper__button-wrap .swiper-button-prev,
+.campaign-swiper__button-wrap .swiper-button-next {
+  display: none;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  background-color: $white;
+  border-radius: 50%;
+  border: 1px solid $accent-color;
 
   @include mq(md) {
     display: block;
   }
 }
 
-.campaign-swiper__button-wrap .swiper-button-prev,
 .campaign-swiper__button-wrap .swiper-button-next {
-  position: relative;
-  width: rem(100);
-  height: rem(100);
-  background-color: #fff9ee;
-  border-radius: 50%;
-}
-
-.campaign-swiper__button-wrap .swiper-button-next {
-  margin-left: rem(100);
+  margin-left: rem(90);
 }
 
 .campaign-swiper__button-wrap .swiper-button-prev::before,
 .campaign-swiper__button-wrap .swiper-button-next::before {
   content: "";
+  display: block;
+  width: 40px;
+  height: 1px;
+  background: $accent-color;
   position: absolute;
   top: 50%;
   left: 50%;
-  width: rem(13);
-  height: rem(13);
-  border-top: rem(3) solid #333;
-  border-right: rem(3) solid #333;
+  transform: translate(-50%, -50%);
 }
 
-.campaign-swiper__button-wrap .swiper-button-prev::before {
-  transform: translate(-50%, -50%) rotate(-135deg);
+.campaign-swiper__button-wrap .swiper-button-prev::after,
+.campaign-swiper__button-wrap .swiper-button-next::after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 1px;
+  background: $accent-color;
+  position: absolute;
+  top: calc(50% - 3.5px);
+
 }
 
-.campaign-swiper__button-wrap .swiper-button-next::before {
-  transform: translate(-50%, -50%) rotate(45deg);
+.campaign-swiper__button-wrap .swiper-button-prev::after {
+  left: calc(50% - 22px);
+  transform: rotate(-40deg);
+}
+
+.campaign-swiper__button-wrap .swiper-button-next::after {
+  right: calc(50% - 22px);
+  transform: rotate(40deg);
 }

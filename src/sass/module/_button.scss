@@ -1,7 +1,15 @@
 @use "global" as *;
 
-.button__inner {
-  margin-top: rem(200);
+.button__wrapper {
+  text-align: center;
+}
+
+.button__wrapper--campaign {
+  margin-top: rem(40);
+
+  @include mq(md) {
+    margin-top: rem(80);
+  }
 }
 
 .button {
@@ -17,6 +25,7 @@
   background-color: $accent-color;
   color: $white;
   cursor: pointer;
+  text-align: left;
   position: relative;
 
   z-index: 1;

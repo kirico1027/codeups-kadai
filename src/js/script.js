@@ -55,22 +55,6 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
 
   // campaign-swiper
   jQuery(function ($) {
-    // リサイズ処理（PC時のみ矢印表示）
-    const campaign_slideLength = document.querySelectorAll(
-      ".js-campaign-swiper .swiper-slide"
-    ).length;
-    $(window).resize(function () {
-      campaign_arrow();
-    });
-    campaign_arrow();
-    function campaign_arrow() {
-      if (window.matchMedia("(max-width: 767px)").matches || campaign_slideLength <= 3) {
-        $(".js-campaign-arrow").hide();
-      } else {
-        $(".js-campaign-arrow").show();
-      }
-    }
-
     var service_swiper = new Swiper(".js-campaign-swiper", {
       loop: true,
       speed: 1000,
@@ -82,7 +66,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
       },
       breakpoints: {
         768: {
-          slidesPerView: 3.88,
+          slidesPerView: 3.94,
           spaceBetween: 40,
         },
       },

@@ -1,8 +1,12 @@
 @use "global" as *;
 
 .campaign {
-  overflow-x: hidden;
-  margin-top: rem(40);
+  overflow-X: hidden;
+  padding-top: rem(40);
+
+  @include mq(md) {
+    padding-top: rem(120);
+  }
 }
 
 .campaign__inner {
@@ -19,5 +23,6 @@
 .campaign__swiper {
   margin-right: calc(50% - 50vw);
   width: 100vw;
-  margin-top: rem(24);
+  margin-top: rem(35);
+  position: relative;
 }
