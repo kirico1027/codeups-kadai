@@ -1,32 +1,62 @@
 @use "global" as *;
 
 .campaign-card a {
-    padding: rem(15) rem(15) rem(35);
-    height: 100%;
-    display: block;
-    background-color: #fff9ee;
+  height: 100%;
+  display: block;
+  background-color: $white;
 }
 
 .campaign-card a:hover {
-    opacity: 1;
+  opacity: 1;
 }
 
 .campaign-card__img {
-    width: 100%;
-    overflow: hidden;
+  width: 100%;
+  overflow: hidden;
 }
 
 .campaign-card__img img {
-    width: 100%;
-    aspect-ratio: 300/186;
-    object-fit: cover;
+  width: 100%;
+  aspect-ratio: 280/188;
+  object-fit: cover;
 }
 
+.campaign-card__body {
+  padding: rem(16) rem(16) rem(24);
+}
+
+.campaign-card__category {
+  font-family: $base-font-family;
+  font-size: rem(11);
+  font-weight: $regular;
+  line-height: calc(22/ 12);
+  color: $accent-color;
+  border: 1px solid $accent-color;
+  padding: 6px 14.5px;
+}
+
+.campaign-card__text-main {
+  font-family: $base-font-family;
+  font-size: rem(16);
+  font-weight: $medium;
+  line-height: calc(26/ 12);
+  color: $title-color;
+  border-bottom: 1px solid $accent-color;
+  padding: rem(4) 0 rem(8);
+}
+
+.campaign-card__text-sub {}
+
+.campaign-card__price {}
+
+
+
 .campaign-card__text {
-    margin-top: rem(15);
-    font-size: rem(15);
-    line-height: 1;
-    @include mq(md){
-        font-size: rem(20);
-    }
+  margin-top: rem(15);
+  font-size: rem(15);
+  line-height: 1;
+
+  @include mq(md) {
+    font-size: rem(20);
+  }
 }

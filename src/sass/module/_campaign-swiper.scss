@@ -9,14 +9,14 @@
 .campaign-swiper__button-wrap .swiper-button-prev,
 .campaign-swiper__button-wrap .swiper-button-next {
     position: relative;
-    width: prem(100);
-    height: prem(100);
+    width: rem(100);
+    height: rem(100);
     background-color: #fff9ee;
     border-radius: 50%;
 }
 
 .campaign-swiper__button-wrap .swiper-button-next {
-    margin-left: prem(100);
+    margin-left: rem(100);
 }
 
 .campaign-swiper__button-wrap .swiper-button-prev::before,
@@ -25,10 +25,10 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    width: prem(13);
-    height: prem(13);
-    border-top: prem(3) solid #333;
-    border-right: prem(3) solid #333;
+    width: rem(13);
+    height: rem(13);
+    border-top: rem(3) solid #333;
+    border-right: rem(3) solid #333;
 }
 
 .campaign-swiper__button-wrap .swiper-button-prev::before {
