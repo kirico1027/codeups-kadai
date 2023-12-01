@@ -1,0 +1,43 @@
+@use "global" as *;
+
+.about {
+  padding: rem(80) 0 rem(70);
+}
+
+.about__container {
+  margin-top: rem(24);
+}
+
+.about__image img {
+  aspect-ratio: 345 / 212;
+  object-fit: cover;
+  height: auto;
+}
+
+.about__body {
+  margin-top: rem(40);
+}
+
+.about__title {
+  font-family: $second-font-family;
+  font-size: rem(40);
+  font-weight: $regular;
+  line-height: 1.25;
+  color: $accent-color;
+}
+
+.about__box {
+  margin-top: rem(16);
+}
+
+.about__text {
+  font-family: $base-font-family;
+  font-size: rem(16);
+  font-weight: $regular;
+  line-height: calc(24 / 16);
+  color: $title-color;
+}
+
+.button__wrapper--about {
+  margin-top: rem(50);
+}
