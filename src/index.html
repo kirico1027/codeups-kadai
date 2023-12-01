@@ -195,7 +195,7 @@
           <p class="section-title__sub">キャンペーン</p>
         </h2>
 
-        <div class="campaign__swiper campaign-swiper">
+        <div class="campaign__swiper campaign-swiper"> 
           <div class="campaign-swiper__button-wrap">
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
@@ -206,7 +206,7 @@
                 <a href="#">
                   <div class="campaign-card__item">
                     <div class="campaign-card__img">
-                      <img src="./assets/images/common/campaign01.jpg" alt="" loading="lazy">
+                      <img src="./assets/images/common/campaign01.jpg" alt="カラフルな魚群の画像" loading="lazy">
                     </div>
                     <div class="campaign-card__body">
                       <span class="campaign-card__category">ライセンス講習</span>
@@ -223,7 +223,7 @@
                 <a href="#">
                   <div class="campaign-card__item">
                     <div class="campaign-card__img">
-                      <img src="./assets/images/common/campaign02.jpg" alt="" loading="lazy">
+                      <img src="./assets/images/common/campaign02.jpg" alt="エメラルドグリーンの浅瀬が広がる島の画像" loading="lazy">
                     </div>
                     <div class="campaign-card__body">
                       <span class="campaign-card__category">ライセンス講習</span>
@@ -240,7 +240,7 @@
                 <a href="#">
                   <div class="campaign-card__item">
                     <div class="campaign-card__img">
-                      <img src="./assets/images/common/campaign03.jpg" alt="" loading="lazy">
+                      <img src="./assets/images/common/campaign03.jpg" alt="ライトアップされたクラゲの画像" loading="lazy">
                     </div>
                     <div class="campaign-card__body">
                       <span class="campaign-card__category">ライセンス講習</span>
@@ -257,7 +257,7 @@
                 <a href="#">
                   <div class="campaign-card__item">
                     <div class="campaign-card__img">
-                      <img src="./assets/images/common/campaign04.jpg" alt="" loading="lazy">
+                      <img src="./assets/images/common/campaign04.jpg" alt="青い海と青い空の間に浮かぶ数人のダイバーの画像" loading="lazy">
                     </div>
                     <div class="campaign-card__body">
                       <span class="campaign-card__category">ライセンス講習</span>
@@ -274,7 +274,7 @@
                 <a href="#">
                   <div class="campaign-card__item">
                     <div class="campaign-card__img">
-                      <img src="./assets/images/common/campaign04.jpg" alt="" loading="lazy">
+                      <img src="./assets/images/common/campaign04.jpg" alt="青い海と青い空の間に浮かぶ数人のダイバーの画像" loading="lazy">
                     </div>
                     <div class="campaign-card__body">
                       <span class="campaign-card__category">ライセンス講習</span>
@@ -298,14 +298,15 @@
 
     <section class="about">
       <div class="about__inner inner">
-        <h2 class="section-title">
+        <h2 class="about__title     section-title">
           <p class="section-title__main"><span>A</span>bout&nbsp;us</p>
           <p class="section-title__sub">私たちについて</p>
         </h2>
         <div class="about__container">
-          <div class="about__image">
-            <img src="./assets/images/common/about.jpg" alt="">
-          </div>
+            <picture class="about__image">
+              <source srcset="./assets/images/common/about-pc.jpg" media="(min-width: 768px)" type="image/jpg">
+              <img src="./assets/images/common/about.jpg" alt="屋根瓦の上に置かれた置物と海中を泳ぐ色鮮やかなサカナの画像" loading="lazy">
+            </picture>
           <div class="about__body">
             <p class="about__title">Dive&nbsp;into<br>the&nbsp;Ocean</p>
             <div class="about__box">
@@ -319,6 +320,7 @@
           </div>
         </div>
       </div>
+      <img src="./assets/images/common/about-illustration.png" class="about__illustration" alt="">
     </section>
   
   </main>
