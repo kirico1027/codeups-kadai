@@ -10,7 +10,7 @@
   @include mq(md) {
     margin-top: rem(80);
   }
-} 
+}
 
 .button__wrapper--about {
   margin-top: rem(50);
@@ -18,6 +18,10 @@
   @include mq(md) {
     margin-top: rem(40);
   }
+}
+
+.button__wrapper--information {
+  margin-top: rem(40);
 }
 
 .button {
