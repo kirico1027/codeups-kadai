@@ -1,0 +1,33 @@
+@use "global" as *;
+
+.blog-card {
+filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.blog-card a {
+  padding: rem(16) rem(16) rem(24);
+  display: block;
+  background-color: $white;
+}
+
+.blog-card__img {
+aspect-ratio: 301 / 201;
+object-fit: cover;
+height: auto;
+}
+
+.blog-card__body {
+
+}
+
+.blog-card__date {
+
+}
+
+.blog-card__title {
+
+}
+
+.blog-card__text {
+
+}
