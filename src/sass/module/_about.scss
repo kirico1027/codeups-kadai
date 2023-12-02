@@ -5,8 +5,18 @@
 
   @include mq(md) {
     padding: rem(140) 0 rem(164);
-    position: relative;
-  }
+}
+
+.about__illustration-wrapper {
+  max-width: rem(1274);
+  width: 100%;
+  margin: auto;
+  position: relative;
+}
+
+.about__inner {
+  position: relative;
+}
 }
 
 .about__container {
@@ -31,7 +41,7 @@
     display: flex;
     position: absolute;
     top: 50%;
-    left: calc(50% + 80px);
+    left: calc(50% + rem(80));
     transform: translate(-50%, -50%);
     margin-top: 0;
     column-gap: rem(40);
@@ -78,8 +88,8 @@
   width: rem(194);
   height: rem(181);
   position: absolute;
-  right: rem(80);
-  bottom: rem(70);
+  right: rem(0);
+  bottom: rem(-88);
 
   @include mq(md) {
     display: block;
