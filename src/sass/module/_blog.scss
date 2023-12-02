@@ -10,8 +10,14 @@
     background-repeat: no-repeat;
     background-position: top center;
     background-size: 100vw 60%;
-   
   }
+}
+
+.blog__illustration-wrapper {
+  max-width: rem(1240);
+  width: 100%;
+  margin: auto;
+  position: relative;
 }
 
 .blog__inner {
@@ -36,5 +42,19 @@
     display: flex;
     column-gap: rem(40);
     margin-top: rem(80);
+  }
+}
+
+.blog__illustration {
+  display: none;
+  width: rem(437);
+  height: rem(201);
+  position: absolute;
+  left: rem(0);
+  top: rem(-70);
+  padding-left: rem(15);
+
+  @include mq(md) {
+    display: block;
   }
 }
