@@ -5,7 +5,7 @@
 }
 
 .campaign-card a {
-  display: block;
+  display: inline-block;
   background-color: $white;
 }
 
@@ -35,6 +35,10 @@
   color: $accent-color;
   border: 1px solid $accent-color;
   padding: 6px 14.5px;
+
+  @include mq(md) {
+  padding: rem(6) rem(14.5);
+  }
 }
 
 .campaign-card__text-main {
@@ -61,7 +65,7 @@
   font-family: $third-font-family;
   font-size: rem(32);
   font-weight: $bold;
-  line-height: 1;
+  line-height: 1.1;
   color: $accent-color;
   margin-top: rem(8);
   text-align: center;

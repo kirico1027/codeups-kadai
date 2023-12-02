@@ -15,8 +15,8 @@
 .campaign-swiper__button-wrap .swiper-button-next {
   display: none;
   position: relative;
-  width: 80px;
-  height: 80px;
+  width: rem(80);
+  height: rem(80);
   background-color: $white;
   border-radius: 50%;
   border: 1px solid $accent-color;
@@ -34,7 +34,7 @@
 .campaign-swiper__button-wrap .swiper-button-next::before {
   content: "";
   display: block;
-  width: 40px;
+  width: rem(40);
   height: 1px;
   background: $accent-color;
   position: absolute;
@@ -56,11 +56,11 @@
 }
 
 .campaign-swiper__button-wrap .swiper-button-prev::after {
-  left: calc(50% - 22px);
+  left: calc(50% - rem(22));
   transform: rotate(-40deg);
 }
 
 .campaign-swiper__button-wrap .swiper-button-next::after {
-  right: calc(50% - 22px);
+  right: calc(50% - rem(22));
   transform: rotate(40deg);
 }

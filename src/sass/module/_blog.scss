@@ -1,7 +1,17 @@
 @use "global" as *;
 
 .blog {
-padding-top: rem(80);
+  padding-top: rem(80);
+  padding-bottom: rem(4);
+
+  @include mq(md) {
+    padding-top: rem(100);
+    background-image: url(../images/common/blog-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 100vw 60%;
+   
+  }
 }
 
 .blog__inner {
@@ -10,6 +20,7 @@ padding-top: rem(80);
   padding-left: rem(21);
   margin-right: auto;
   margin-left: auto;
+  max-width: rem(634);
 
   @include mq("md") {
     max-width: $inner + strip-unit($padding-pc) * 2;
@@ -19,9 +30,11 @@ padding-top: rem(80);
 }
 
 .blog__cards {
+  margin-top: rem(24);
 
-}
-
-.blog__card {
-
+  @include mq(md) {
+    display: flex;
+    column-gap: rem(40);
+    margin-top: rem(80);
+  }
 }

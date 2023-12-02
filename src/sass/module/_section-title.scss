@@ -1,11 +1,14 @@
 @use "global" as *;
 
+.section-title {
+  color: $title-color;
+}
+
 .section-title__main {
   font-family: $second-font-family;
   font-size: rem(40);
   font-weight: $regular;
   line-height: 1;
-  color: $title-color;
   text-align: center;
 }
 
@@ -13,13 +16,24 @@
   color: $accent-color;
 }
 
+.section-title__main--blog span {
+  @include mq(md) {
+    color: $white;
+  }
+}
+
 .section-title__sub {
   font-family: $base-font-family;
   font-size: rem(12);
   font-weight: $regular;
   line-height: calc(18 / 12);
-  color: $accent-color;
   text-align: center;
   margin-top: rem(8);
+}
+
+.section-title--blog {
+  @include mq(md) {
+    color: $white;
+  }
 }
 
