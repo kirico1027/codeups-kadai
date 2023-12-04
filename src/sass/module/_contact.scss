@@ -4,10 +4,35 @@
   padding: rem(80) 0 rem(104);
   text-align: center;
   filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+
+  @include mq(md) {
+    filter: initial;
+    padding: rem(140) 0 rem(160);
+  }
 }
 
 .contact__illustration-wrapper {
+  max-width: rem(1370);
+  width: 100%;
+  margin: auto;
+  position: relative;
+}
 
+.contact__illustration {
+  width: rem(124);
+  height: rem(50);
+  position: absolute;
+  right: rem(0);
+  top: rem(-30);
+  padding-right: rem(15);
+
+  @include mq(md) {
+    width: rem(316);
+    height: rem(138);
+    right: rem(0);
+    top: rem(-40);
+    filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+  }
 }
 
 .contact__inner {
@@ -26,33 +51,59 @@
 
 .contact__container {
   text-align: center;
+
+  @include mq(md) {
+    display: flex;
+    padding: rem(80) rem(50);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+  }
 }
 
 .contact__content-first {
   padding: 0 rem(10);
+
+  @include mq(md) {
+  width: 53.35%;
+  padding: 0 rem(82) 0 0;
+  border-right: 1px solid $accent-color;
+  }
 }
 
 .contact__content-second {
   margin-top: rem(40);
-}
 
-.contact__logo {
- 
+  @include mq(md) {
+  flex: 1;
+  margin-top: rem(20);
+  }
 }
 
 .contact__logo a {
   display: inline-block;
   width: rem(174);
+
+  @include mq(md) {
+    width: rem(200);
+  }
 }
 
 .contact__body {
   border-top: 1px solid $accent-color;
   margin-top: rem(-7);
   padding-top: rem(16);
+
+  @include mq(md) {
+  display: flex;
+  column-gap: rem(21);
+  padding-top: rem(24);
+  }
 }
 
 .contact__info {
-
+  @include mq(md) {
+    flex: 1;
+    text-align: left;
+  }
 }
 .contact__info p {
 display: inline-block;
@@ -66,6 +117,11 @@ line-height: calc(28 / 16);
 .contact__map-wrap {
   margin-top: rem(16);
   width: 100%;
+
+  @include mq(md) {
+  width: 62%;
+  margin-top: 0;
+  }
 }
 
 .contact__map {
