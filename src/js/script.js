@@ -29,11 +29,13 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     function openDrawer() {
       $(".js-drawer").fadeIn();
       $(".js-hamburger").addClass("is-open");
+      $('body').toggleClass('is-noscroll');
     }
 
     function closeDrawer() {
       $(".js-drawer").fadeOut();
       $(".js-hamburger").removeClass("is-open");
+      $("body").removeClass("is-noscroll");
     }
   });
 

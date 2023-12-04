@@ -2,7 +2,7 @@
 
 .campaign {
   overflow-X: hidden;
-  padding-top: rem(40);
+  padding-top: rem(45);
 
   @include mq(md) {
     padding-top: rem(120);
@@ -24,6 +24,6 @@
 .campaign__swiper {
   margin-right: calc(50% - 50vw);
   width: 100vw;
-  margin-top: rem(35);
+  margin-top: rem(23);
   position: relative;
 }

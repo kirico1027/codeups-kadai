@@ -100,17 +100,31 @@ margin-top: rem(40);
   position: relative;
 }
 
-.button span::after {
+.button span::before {
+  display: block;
+  width: 10px;
+  height: 1px;
+  background: $white;
   position: absolute;
   content: "";
-  top: calc(50% - 2px);
+  top: calc(50% - 2.2px);
+  transform: translateY(-50%);
+  right: calc(50% - 86px);
+  transform: rotate(40deg);
+  border-radius: 4px;
+}
+
+.button span::after {
+  display: block;
+  width: rem(40);
+  height: 1px;
+  background: $white;
+  position: absolute;
+  content: "";
+  top: calc(50% + 1px);
   transform: translateY(-50%);
   right: -48px;
-  background-image: url(../images/common/arrow-white.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 40px;
-  height: 6px;
+  border-radius: 4px;
 }
 
 .button:hover {

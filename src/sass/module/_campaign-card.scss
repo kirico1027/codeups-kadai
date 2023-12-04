@@ -24,17 +24,17 @@
 }
 
 .campaign-card__body {
-  padding: rem(16) rem(16) rem(24);
+  padding: rem(18) rem(16) rem(22);
 }
 
 .campaign-card__category {
   font-family: $base-font-family;
-  font-size: rem(11);
+  font-size: rem(12);
   font-weight: $regular;
   line-height: calc(22/ 12);
   color: $accent-color;
   border: 1px solid $accent-color;
-  padding: 6px 14.5px;
+  padding: 5.5px 11px;
 
   @include mq(md) {
   padding: rem(6) rem(14.5);
@@ -48,7 +48,7 @@
   line-height: calc(26/ 12);
   color: $title-color;
   border-bottom: 1px solid $accent-color;
-  padding: rem(4) 0 rem(8);
+  padding: rem(3) 0 rem(1);
 }
 
 .campaign-card__text-sub {
@@ -67,7 +67,7 @@
   font-weight: $bold;
   line-height: 1.1;
   color: $accent-color;
-  margin-top: rem(8);
+  margin-top: rem(6);
   text-align: center;
 }
 
@@ -78,6 +78,6 @@
   line-height: 1;
   color: $title-color;
   display: inline-block;
-  margin-right: rem(16);
+  margin-right: rem(18);
   text-decoration: line-through 3px solid #C94800;
 }

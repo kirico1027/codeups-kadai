@@ -41,6 +41,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  border-radius: 4px;
 }
 
 .campaign-swiper__button-wrap .swiper-button-prev::after,
@@ -52,7 +53,7 @@
   background: $accent-color;
   position: absolute;
   top: calc(50% - 3.5px);
-
+  border-radius: 4px;
 }
 
 .campaign-swiper__button-wrap .swiper-button-prev::after {
