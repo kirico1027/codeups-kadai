@@ -50,5 +50,9 @@
   line-height: calc(24 / 16);
   color: $title-color;
   margin-top: rem(8);
+
+  @include mq(md) {
+  color: $font-color;
+  }
 }
 

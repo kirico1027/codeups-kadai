@@ -51,4 +51,8 @@ height: auto;
   font-weight: $regular;
   line-height: calc(24 / 16);
   margin-top: rem(16);
+
+  @include mq(md) {
+  color: $font-color;
+  }
 }
