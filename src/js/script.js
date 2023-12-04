@@ -79,10 +79,10 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
 
 // 画像のアニメーション
   //要素の取得とスピードの設定
-var box = $(".information-card__img"),
+var box = $(".js-colorbox"),
   speed = 700;
 
-//.の付いた全ての要素に対して下記の処理を行う
+//.js-colorの付いた全ての要素に対して下記の処理を行う
 box.each(function () {
   $(this).append('<div class="color"></div>');
   var color = $(this).find($(".color")),
