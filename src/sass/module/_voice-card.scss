@@ -41,7 +41,7 @@
   flex-direction: column;
 
   @include mq(md) {
-  padding-top: rem(24);
+  padding-top: rem(28);
   }
 }
 
@@ -75,7 +75,7 @@
   margin-top: rem(-3);
 
   @include mq(md) {
-    padding: rem(5.5) rem(11.2);
+    padding: rem(5) rem(15);
   }
 }
 
@@ -90,7 +90,7 @@
   @include mq(md) {
   font-size:  rem(24);
   margin-top: rem(8);
-  line-height: 1.5;
+  line-height: 1.45;
   }
 }
 

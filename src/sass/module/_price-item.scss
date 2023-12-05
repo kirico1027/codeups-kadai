@@ -29,11 +29,15 @@
 }
 
 .price-item__course {
-  
+  @include mq(md) {
+  letter-spacing: 0.15em;
+  }
 }
 
 .price-item__price {
-
+  @include mq(md) {
+    letter-spacing: 0.06em;
+    }
 }
 
 

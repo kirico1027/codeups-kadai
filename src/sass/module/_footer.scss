@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .footer {
-  padding: rem(45) 0 rem(56);
+  padding: rem(47) 0 rem(56);
   color: $white;
   background-color: $accent-color;
 
@@ -38,10 +38,11 @@
 }
 
 .footer__sns {
-  margin-top: rem(16);
+  margin-top: rem(18);
   display: flex;
   justify-content: left;
   align-items: center;
+  padding-left: rem(2);
 
   @include mq(md) {
     margin-top: rem(10);
@@ -50,15 +51,15 @@
 
 .footer__sns-icon {
   display: block;
-  width: rem(19.5);
+  width: rem(20);
 
   @include mq(md) {
     width: rem(26);
   }
 }
 
-.footer__sns-icon+.footer__sns-icon {
-  margin-left: rem(16);
+.footer__sns-icon + .footer__sns-icon {
+  margin-left: rem(20);
 
   @include mq(md) {
     margin-left: rem(19);
@@ -66,8 +67,8 @@
 }
 
 .footer__nav {
-  padding-left: rem(22);
-  margin-top: rem(40);
+  padding-left: rem(8);
+  margin-top: rem(43);
   width: calc(345 / 374 * 100vw);
   margin: auto;
 
@@ -103,7 +104,7 @@
 .footer__nav-items {
   display: flex;
   justify-content: center;
-  column-gap: calc(35 /375 * 100vw);
+  column-gap: calc(40 /375 * 100vw);
 
   @include mq(md) {
   column-gap: rem(140);
@@ -135,7 +136,7 @@
 }
 
 .footer__copyright {
-  margin: rem(40) rem(-1) 0;
+  margin: rem(43) rem(-1) 0;
   display: block;
   font-size: rem(12);
   font-family: $second-font-family;

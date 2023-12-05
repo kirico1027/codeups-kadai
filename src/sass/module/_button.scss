@@ -8,7 +8,8 @@
   margin-top: rem(36);
 
   @include mq(md) {
-    margin-top: rem(80);
+    margin-top: rem(76);
+    padding-right: rem(5);
   }
 }
 
@@ -18,12 +19,17 @@
 
   @include mq(md) {
     margin-top: rem(40);
+    padding-right: rem(5);
   }
 }
 
 .button__wrapper--information {
   margin-top: rem(40);
   padding-right: rem(4);
+
+  @include mq(md) {
+    padding-right: rem(6);
+  }
 }
 
 .button__wrapper--blog {
@@ -31,7 +37,8 @@
   padding-right: rem(4);
 
   @include mq(md) {
-  margin-top: rem(80);
+  margin-top: rem(79);
+  padding-right: rem(6);
   }
 }
 
@@ -49,12 +56,19 @@
   padding-right: rem(4);
 
   @include mq(md) {
-    margin-top: rem(80);
+    margin-top: rem(79);
   }
 }
 
 .button__wrapper--contact {
-margin-top: rem(40);
+  margin-top: rem(39);
+  padding-right: rem(4);
+
+  @include mq(md) {
+    margin-top: rem(40);
+    padding-right: rem(2);
+  
+  }
 }
 
 .button {

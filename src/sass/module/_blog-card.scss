@@ -16,6 +16,10 @@
   padding: rem(16) rem(16) rem(24);
   display: inline-block;
   background-color: $white;
+
+  @include mq(md) {
+    padding: rem(17) rem(16) rem(24);
+  }
 }
 
 .blog-card__img {

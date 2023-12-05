@@ -4,7 +4,7 @@
   padding: rem(84) 0 rem(72);
 
   @include mq(md) {
-    padding: rem(140) 0 rem(164);
+    padding: rem(140) 0 rem(162);
 }
 
 .about__illustration-wrapper {
@@ -40,7 +40,7 @@
   @include mq(md) {
     display: flex;
     position: absolute;
-    top: 50%;
+    top: calc(50% - rem(13));
     left: calc(50% + rem(80));
     transform: translate(-50%, -50%);
     margin-top: 0;
@@ -94,5 +94,6 @@
 
   @include mq(md) {
     display: block;
+    right: rem(-5);
   }
 }

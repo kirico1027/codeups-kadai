@@ -3,7 +3,7 @@
 .information-card {
   @include mq(md) {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     column-gap: rem(48);
   }
 }
@@ -27,6 +27,7 @@
 
   @include mq(md) {
   flex: 1;
+  padding-top: rem(61);
   }
 }
 
@@ -40,6 +41,7 @@
   @include mq(md) {
   font-size:  rem(24);
   line-height: 1;
+  padding-bottom: rem(8);
   }
 }
 
@@ -53,6 +55,7 @@
 
   @include mq(md) {
   color: $font-color;
+  margin-top: rem(6);
   }
 }
 

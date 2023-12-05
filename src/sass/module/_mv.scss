@@ -7,6 +7,10 @@
   height: 100vh;
   */
   height: rem(667);
+
+  @include mq(md) {
+  height: rem(768);
+  }
 }
 
 .mv__inner {

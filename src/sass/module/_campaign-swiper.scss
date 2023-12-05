@@ -2,6 +2,10 @@
 
 .campaign-swiper__swiper {
   padding: rem(5);
+
+  @include mq(md) {
+  margin-left: rem(-5);
+  }
 }
 
 .campaign-swiper__button-wrap {
@@ -27,7 +31,7 @@
 }
 
 .campaign-swiper__button-wrap .swiper-button-next {
-  margin-left: rem(90);
+  margin-left: rem(100);
 }
 
 .campaign-swiper__button-wrap .swiper-button-prev::before,
@@ -38,7 +42,7 @@
   height: 1px;
   background: $accent-color;
   position: absolute;
-  top: 50%;
+  top: calc(50% + rem(2));
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 4px;
@@ -52,7 +56,7 @@
   height: 1px;
   background: $accent-color;
   position: absolute;
-  top: calc(50% - 3.5px);
+  top: calc(50% - 1.5px);
   border-radius: 4px;
 }
 
