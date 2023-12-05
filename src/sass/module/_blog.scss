@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .blog {
-  padding-top: rem(80);
+  padding-top: rem(85);
   padding-bottom: rem(4);
 
   @include mq(md) {
@@ -36,7 +36,7 @@
 }
 
 .blog__cards {
-  margin-top: rem(24);
+  margin-top: rem(29);
 
   @include mq(md) {
     display: flex;

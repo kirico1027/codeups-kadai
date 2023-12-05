@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .voice {
-  padding: rem(80) 0 rem(84);
+  padding: rem(85) 0 rem(84);
 
   @include mq(md) {
   padding: rem(144) 0;
@@ -46,7 +46,7 @@
 }
 
 .voice__cards {
-  margin-top: rem(40);
+  margin-top: rem(45);
 
   @include mq(md) {
     display: flex;

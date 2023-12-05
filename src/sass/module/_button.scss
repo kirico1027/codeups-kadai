@@ -5,7 +5,7 @@
 }
 
 .button__wrapper--campaign {
-  margin-top: rem(40);
+  margin-top: rem(36);
 
   @include mq(md) {
     margin-top: rem(80);
@@ -14,6 +14,7 @@
 
 .button__wrapper--about {
   margin-top: rem(50);
+  padding-right: rem(17);
 
   @include mq(md) {
     margin-top: rem(40);
@@ -22,10 +23,12 @@
 
 .button__wrapper--information {
   margin-top: rem(40);
+  padding-right: rem(4);
 }
 
 .button__wrapper--blog {
-  margin-top: rem(40);
+  margin-top: rem(39);
+  padding-right: rem(4);
 
   @include mq(md) {
   margin-top: rem(80);
@@ -33,7 +36,8 @@
 }
 
 .button__wrapper--voice {
-  margin-top: rem(40);
+  margin-top: rem(39);
+  padding-right: rem(4);
 
   @include mq(md) {
   margin-top: rem(80);
@@ -42,6 +46,7 @@
 
 .button__wrapper--price {
   margin-top: rem(40);
+  padding-right: rem(4);
 
   @include mq(md) {
     margin-top: rem(80);
@@ -77,7 +82,7 @@ margin-top: rem(40);
   top: 4px;
   left: 4px;
   width: calc(100% + 2px);
-  height: calc(100% + 2px);
+  height: calc(100% + 1px);
   border: solid 1px $accent-color;
   z-index: -1;
 }
@@ -135,7 +140,8 @@ margin-top: rem(40);
   transform: scale(1, 1);
 }
 
+.button:hover span::before,
 .button:hover span::after {
-  background-image: url(../images/common/arrow-accent.png);
+  background: $accent-color;
 }
 

@@ -10,7 +10,6 @@
   font-weight: $regular;
   line-height: 1;
   text-align: center;
-  padding-left: rem(2);
 
   @include mq(md) {
   font-size:  rem(40);

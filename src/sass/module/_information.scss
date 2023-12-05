@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .information {
-  padding: rem(80) 0;
+  padding: rem(86) 0 rem(83);
   background-color: $accent-bg;
 
   @include mq(md) {
@@ -10,7 +10,7 @@
 }
 
 .information__card {
-  margin-top: rem(24);
+  margin-top: rem(29);
 
   @include mq(md) {
     margin-top: rem(40);

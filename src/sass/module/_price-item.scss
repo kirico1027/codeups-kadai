@@ -14,7 +14,7 @@
   font-size:  rem(16);
   font-weight: $bold;
   line-height: calc(24 / 16);
-  padding-bottom: rem(4);
+  padding-bottom: rem(3);
   border-bottom: 1px solid $accent-color;
 }
 
@@ -23,12 +23,13 @@
   display: flex;
   justify-content: space-between;
   margin-top: rem(8);
-}
-
-.price-item__course {
   font-size: rem(14);
   font-weight: $regular;
   line-height: calc(24 / 14);
+}
+
+.price-item__course {
+  
 }
 
 .price-item__price {

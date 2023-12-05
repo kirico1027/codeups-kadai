@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .price {
-  padding: rem(80) 0 rem(84);
+  padding: rem(85) 0 rem(84);
   background-color: $accent-bg;
 
   @include mq(md) {
@@ -17,7 +17,7 @@
 }
 
 .price__container {
-  margin-top: rem(24);
+  margin-top: rem(28);
 
   @include mq(md) {
     margin-top: rem(40);
