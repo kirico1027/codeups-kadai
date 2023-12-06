@@ -1,13 +1,14 @@
 @use "global" as *;
 
 .section-title {
-  color: $title-color;
+  color: $accent-color;
+  font-weight: $regular;
 }
 
 .section-title__main {
   font-family: $second-font-family;
   font-size: rem(32);
-  font-weight: $regular;
+
   line-height: 1;
   text-align: center;
 
@@ -17,10 +18,12 @@
 }
 
 .section-title__main span {
-  color: $accent-color;
+  color: $title-color;
 }
 
-.section-title__main--blog span {
+.section-title__main--blog,
+.section-title__main--blog span,
+.section-title__sub--blog {
   @include mq(md) {
     color: $white;
   }
@@ -29,27 +32,23 @@
 .section-title__sub {
   font-family: $base-font-family;
   font-size: rem(12);
-  font-weight: $regular;
   line-height: calc(18 / 12);
   text-align: center;
   margin-top: rem(7);
   padding-left: rem(3);
-}
-
-.section-title--blog {
-  @include mq(md) {
-    color: $white;
-  }
+  color: $accent-color;
+  font-weight: $regular;
 }
 
 .section-title__main--contact {
   font-size:  rem(80);
 
- 
+  @include mq(md) {
+    font-size:  rem(80);
+  }
 }
 
 .section-title__sub--contact {
-  color: $accent-color;
   margin-top: rem(-7);
 }
 

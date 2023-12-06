@@ -169,16 +169,16 @@
 
 .header__drawer-nav {
   position: absolute;
-  top: calc(50% - rem(5));
+  top: calc(50% - rem(2));
   left: 50%;
   transform: translate(-50%,-50%);
-  padding-left: rem(17);
+  padding-left: rem(18);
   width: rem(338);
 }
 
 .header__drawer-items {
   display: flex;
-  column-gap: rem(23);
+  column-gap: rem(25);
 }
 
 .header__drawer-content {
@@ -199,13 +199,14 @@
   line-height: calc(18 /16);
   font-weight: $regular;
   line-height: 1;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.03em;
   color: $white;
 }
 
 .header__drawer-item--main a {
   font-weight: $bold;
   position: relative;
+  line-height: 1.05;
 }
 
 .header__drawer-item--main a::before {

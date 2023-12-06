@@ -29,6 +29,7 @@
 
   @include mq(md) {
     padding-right: rem(6);
+    margin-top: rem(39);
   }
 }
 
@@ -37,7 +38,7 @@
   padding-right: rem(4);
 
   @include mq(md) {
-  margin-top: rem(79);
+  margin-top: rem(80);
   padding-right: rem(6);
   }
 }

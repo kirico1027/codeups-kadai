@@ -5,7 +5,7 @@
   padding-bottom: rem(4);
 
   @include mq(md) {
-    padding-top: rem(100);
+    padding-top: rem(101);
     background-image: url(../images/common/blog-bg.jpg);
     background-repeat: no-repeat;
     background-position: top center;
@@ -36,7 +36,7 @@
 }
 
 .blog__cards {
-  margin-top: rem(29);
+  margin-top: rem(28);
 
   @include mq(md) {
     display: flex;

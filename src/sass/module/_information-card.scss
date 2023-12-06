@@ -10,7 +10,7 @@
 
 .information-card__img {
   @include mq(md) {
-    width: 50%;
+    width: 49.9%;
   }
 }
 
@@ -18,6 +18,10 @@
   aspect-ratio: 345 / 227;
   object-fit: cover;
   height: auto;
+
+  @include mq(md) {
+    aspect-ratio: 540 / 356;
+  }
 }
 
 .information-card__body {
@@ -27,7 +31,7 @@
 
   @include mq(md) {
   flex: 1;
-  padding-top: rem(61);
+  padding-top: rem(62);
   }
 }
 
@@ -55,7 +59,7 @@
 
   @include mq(md) {
   color: $font-color;
-  margin-top: rem(6);
+  margin-top: rem(7.5);
   }
 }
 

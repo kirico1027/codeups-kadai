@@ -31,6 +31,10 @@ height: auto;
 .blog-card__body {
   color: $title-color;
   padding-top: rem(17);
+
+  @include mq(md) {
+  padding-top: rem(16);
+  }
 }
 
 .blog-card__date {

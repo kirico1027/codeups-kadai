@@ -4,7 +4,7 @@
   padding: rem(84) 0 rem(72);
 
   @include mq(md) {
-    padding: rem(140) 0 rem(162);
+    padding: rem(138) 0 rem(162);
 }
 
 .about__illustration-wrapper {
@@ -20,10 +20,10 @@
 }
 
 .about__container {
-  margin-top: rem(29);
+  margin-top: rem(28);
 
   @include mq(md) {
-    margin-top: rem(40);
+    margin-top: rem(41);
     position: relative;
   }
 }
@@ -35,12 +35,12 @@
 }
 
 .about__body {
-  margin-top: rem(38);
+  margin-top: rem(39);
 
   @include mq(md) {
     display: flex;
     position: absolute;
-    top: calc(50% - rem(13));
+    top: calc(50% - rem(12.5));
     left: calc(50% + rem(80));
     transform: translate(-50%, -50%);
     margin-top: 0;
@@ -59,6 +59,8 @@
     font-size: rem(80);
     line-height: calc(100 / 80);
     color: $white;
+    padding-top: rem(2);
+    margin-left: rem(-1);
   }
 }
 

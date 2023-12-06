@@ -26,18 +26,11 @@
   font-size: rem(14);
   font-weight: $regular;
   line-height: calc(24 / 14);
-}
 
-.price-item__course {
   @include mq(md) {
-  letter-spacing: 0.15em;
+  font-size:  rem(16);
+  line-height: calc(24 / 16 );
   }
-}
-
-.price-item__price {
-  @include mq(md) {
-    letter-spacing: 0.06em;
-    }
 }
 
 
