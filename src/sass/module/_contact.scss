@@ -3,7 +3,7 @@
 .contact {
   padding: rem(80) 0 rem(104);
   text-align: center;
-  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+  position: relative;
 
   @include mq(md) {
     padding: rem(140) 0 rem(160);
@@ -25,14 +25,12 @@
   right: rem(0);
   top: rem(-27);
   padding-right: rem(15);
-  
 
   @include mq(md) {
     width: rem(316);
     height: rem(138);
     right: rem(0);
     top: rem(-40);
-    filter: initial;
   }
 }
 
@@ -42,11 +40,13 @@
   padding-left: rem(30);
   margin-right: auto;
   margin-left: auto;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
 
   @include mq("md") {
     max-width: $inner + strip-unit($padding-pc) * 2;
     padding-right: $padding-pc;
     padding-left: $padding-pc;
+    filter: initial;
   }
 }
 
@@ -57,6 +57,7 @@
     display: flex;
     padding: rem(80) rem(50);
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+   
   }
 }
 
