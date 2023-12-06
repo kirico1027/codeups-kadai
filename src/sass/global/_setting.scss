@@ -22,7 +22,8 @@ body {
   font-family: $base-font-family;
 }
 
-/* ハンバーガーメニューが開いたとき、スクロールさせない */
+/* 追加・
+ハンバーガーメニューが開いたとき、スクロールさせない */
 body.is-noscroll {
   overflow: hidden;
 }

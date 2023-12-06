@@ -41,7 +41,7 @@
   padding: 5.5px 11px;
 
   @include mq(md) {
-  padding: rem(7) rem(14.5) rem(8);
+    padding: rem(7) rem(14.5) rem(8);
   }
 }
 
@@ -69,9 +69,9 @@
   margin-top: rem(8);
 
   @include mq(md) {
-  font-size:  rem(16);
-  margin-top: rem(16);
-  padding-right: rem(15);
+    font-size: rem(16);
+    margin-top: rem(16);
+    padding-right: rem(15);
   }
 }
 
@@ -85,8 +85,8 @@
   text-align: center;
 
   @include mq(md) {
-  font-size:  rem(40);
-  margin-top: rem(4);
+    font-size: rem(40);
+    margin-top: rem(4);
   }
 }
 
@@ -101,7 +101,7 @@
   text-decoration: line-through 3px solid #C94800;
 
   @include mq(md) {
-  font-size:  rem(24);
-  margin-right: rem(25);
+    font-size: rem(24);
+    margin-right: rem(25);
   }
 }

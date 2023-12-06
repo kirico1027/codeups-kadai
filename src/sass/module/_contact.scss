@@ -10,7 +10,7 @@
     filter: initial;
   }
 }
- 
+
 .contact__illustration-wrapper {
   max-width: rem(1370);
   width: 100%;
@@ -57,7 +57,7 @@
     display: flex;
     padding: rem(80) rem(50);
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
-   
+
   }
 }
 
@@ -65,9 +65,9 @@
   padding: 0 rem(10);
 
   @include mq(md) {
-  width: 53.35%;
-  padding: 0 rem(82) 0 0;
-  border-right: 1px solid $accent-color;
+    width: 53.35%;
+    padding: 0 rem(82) 0 0;
+    border-right: 1px solid $accent-color;
   }
 }
 
@@ -75,16 +75,16 @@
   margin-top: rem(40);
 
   @include mq(md) {
-  flex: 1;
-  margin-top: rem(22);
-  padding-left: rem(17);
-  filter: initial;
+    flex: 1;
+    margin-top: rem(22);
+    padding-left: rem(17);
+    filter: initial;
   }
 }
 
 .contact__logo {
   @include mq(md) {
-  padding-bottom: rem(2);
+    padding-bottom: rem(2);
   }
 }
 
@@ -102,10 +102,10 @@
   padding-top: rem(13);
 
   @include mq(md) {
-  display: flex;
-  column-gap: rem(21);
-  padding-top: rem(24);
-  filter: initial;
+    display: flex;
+    column-gap: rem(21);
+    padding-top: rem(24);
+    filter: initial;
   }
 }
 
@@ -116,13 +116,14 @@
     margin-top: rem(-2);
   }
 }
+
 .contact__info p {
-display: inline-block;
-font-family: $base-font-family;
-font-size:  rem(16);
-font-weight: $regular;
-color: $title-color;
-line-height: calc(28 / 16);
+  display: inline-block;
+  font-family: $base-font-family;
+  font-size: rem(16);
+  font-weight: $regular;
+  color: $title-color;
+  line-height: calc(28 / 16);
 }
 
 .contact__map-wrap {
@@ -130,8 +131,8 @@ line-height: calc(28 / 16);
   width: 100%;
 
   @include mq(md) {
-  width: 62%;
-  margin-top: 0;
+    width: 62%;
+    margin-top: 0;
   }
 }
 
@@ -151,15 +152,14 @@ line-height: calc(28 / 16);
 }
 
 .contact__lead {
-font-family: $base-font-family;
-font-size:  rem(14);
-font-weight: $regular;
-line-height: calc(18 / 14);
-color: $accent-color;
-margin-top: rem(9);
+  font-family: $base-font-family;
+  font-size: rem(14);
+  font-weight: $regular;
+  line-height: calc(18 / 14);
+  color: $accent-color;
+  margin-top: rem(9);
 
-@include mq(md) {
-margin-top: rem(7);
+  @include mq(md) {
+    margin-top: rem(7);
+  }
 }
-}
-

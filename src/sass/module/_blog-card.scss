@@ -23,9 +23,9 @@
 }
 
 .blog-card__img {
-aspect-ratio: 301 / 201;
-object-fit: cover;
-height: auto;
+  aspect-ratio: 301 / 201;
+  object-fit: cover;
+  height: auto;
 }
 
 .blog-card__body {
@@ -33,7 +33,7 @@ height: auto;
   padding-top: rem(17);
 
   @include mq(md) {
-  padding-top: rem(16);
+    padding-top: rem(16);
   }
 }
 
@@ -61,6 +61,6 @@ height: auto;
   margin-top: rem(16);
 
   @include mq(md) {
-  color: $font-color;
+    color: $font-color;
   }
 }

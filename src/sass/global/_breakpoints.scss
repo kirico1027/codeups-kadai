@@ -39,8 +39,6 @@ $mediaquerys: (
     lg: "screen and (max-width: #{map-get($breakpoints,'lg')}px)",
     xl: "screen and (min-width: #{map-get($breakpoints,'xl')}px)",
   );
-
-
 }
 
 // @include mq(){}で書くとブレークポイントが反映される（初期値はmd）
@@ -57,6 +55,7 @@ $mediaquerys: (
     display: none;
     @include mq("md") {
       display: inline-block;
+    /* display: block */
     }
   }
 

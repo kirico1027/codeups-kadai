@@ -38,8 +38,8 @@
   padding-right: rem(4);
 
   @include mq(md) {
-  margin-top: rem(80);
-  padding-right: rem(6);
+    margin-top: rem(80);
+    padding-right: rem(6);
   }
 }
 
@@ -48,7 +48,7 @@
   padding-right: rem(4);
 
   @include mq(md) {
-  margin-top: rem(80);
+    margin-top: rem(80);
   }
 }
 
@@ -68,7 +68,7 @@
   @include mq(md) {
     margin-top: rem(40);
     padding-right: rem(2);
-  
+
   }
 }
 
@@ -80,7 +80,7 @@
   font-family: $second-font-family;
   font-weight: $regular;
   border: solid 1px $accent-color;
-  line-height: calc(22 /14 );
+  line-height: calc(22 / 14);
   transition: 0.3s;
   background-color: $accent-color;
   color: $white;
@@ -112,7 +112,7 @@
   height: 100%;
   transform: scale(0, 1);
   transform-origin: left top;
-  transition: 0.2s cubic-bezier(0.45, 0, 0.55, 1);
+  transition: 0.3s cubic-bezier(0.45, 0, 0.55, 1);
   z-index: -1;
 }
 
@@ -161,4 +161,3 @@
 .button:hover span::after {
   background: $accent-color;
 }
-

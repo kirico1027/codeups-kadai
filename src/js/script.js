@@ -1,6 +1,5 @@
 
-jQuery(function ($) { // この中であればWordpressでも「$」が使用可能になる
-
+jQuery(function ($) {
   jQuery(function ($) {
     // ハンバーガーメニュー
     $(function () {
@@ -13,12 +12,10 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
         }
       });
 
-      // backgroundまたはページ内リンクをクリックで閉じる
       $(".js-drawer a[href]").on("click", function () {
         closeDrawer();
       });
 
-      // resizeイベント
       $(window).on("resize", function () {
         if (window.matchMedia("(min-width: 768px)").matches) {
           closeDrawer();
@@ -29,7 +26,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     function openDrawer() {
       $(".js-drawer").fadeIn();
       $(".js-hamburger").addClass("is-open");
-      $('body').toggleClass('is-noscroll');
+      $("body").toggleClass("is-noscroll");
     }
 
     function closeDrawer() {
@@ -79,33 +76,29 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     });
   });
 
-// 画像のアニメーション
-  //要素の取得とスピードの設定
-var box = $(".js-colorbox"),
-  speed = 700;
+  // 画像のアニメーション
+  var box = $(".js-colorbox"),
+    speed = 700;
 
-//.js-colorの付いた全ての要素に対して下記の処理を行う
-box.each(function () {
-  $(this).append('<div class="color"></div>');
-  var color = $(this).find($(".color")),
-    image = $(this).find("img");
-  var counter = 0;
+  box.each(function () {
+    $(this).append('<div class="color"></div>');
+    var color = $(this).find($(".color")),
+      image = $(this).find("img");
+    var counter = 0;
 
-  image.css("opacity", "0");
-  color.css("width", "0%");
-  //inviewを使って背景色が画面に現れたら処理をする
-  color.on("inview", function () {
-    if (counter == 0) {
-      $(this)
-        .delay(200)
-        .animate({ width: "100%" }, speed, function () {
-          image.css("opacity", "1");
-          $(this).css({ left: "0", right: "auto" });
-          $(this).animate({ width: "0%" }, speed);
-        });
-      counter = 1;
-    }
+    image.css("opacity", "0");
+    color.css("width", "0%");
+    color.on("inview", function () {
+      if (counter == 0) {
+        $(this)
+          .delay(200)
+          .animate({ width: "100%" }, speed, function () {
+            image.css("opacity", "1");
+            $(this).css({ left: "0", right: "auto" });
+            $(this).animate({ width: "0%" }, speed);
+          });
+        counter = 1;
+      }
+    });
   });
-});
-
 });
