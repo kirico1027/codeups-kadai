@@ -27,6 +27,11 @@ body.is-noscroll {
   overflow: hidden;
 }
 
+a:hover {
+  opacity: 0.85;
+  transform: opacity 0.3s;
+}
+
 // フォントウェイト
 $regular: 400;
 $medium: 500;

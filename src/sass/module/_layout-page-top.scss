@@ -4,6 +4,7 @@
   position: absolute;
   right: rem(15);
   bottom: rem(16);
+  cursor: pointer;
 
   @include mq(md) {
     right: rem(20);

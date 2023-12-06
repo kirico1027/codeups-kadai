@@ -149,10 +149,12 @@
 
 .button:hover {
   color: $accent-color;
+  opacity: 1;
 }
 
 .button:hover::after {
   transform: scale(1, 1);
+  opacity: 1;
 }
 
 .button:hover span::before,
