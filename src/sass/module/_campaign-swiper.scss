@@ -3,7 +3,6 @@
 .campaign-swiper__swiper {
   padding: rem(5);
 
-  
   @include mq(md) {
     margin-left: rem(-5);
   }
