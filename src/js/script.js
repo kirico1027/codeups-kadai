@@ -1,4 +1,3 @@
-
 jQuery(function ($) {
   jQuery(function ($) {
     // ハンバーガーメニュー
@@ -76,6 +75,7 @@ jQuery(function ($) {
     });
   });
 
+  
   // 画像のアニメーション
   var box = $(".js-colorbox"),
     speed = 700;
@@ -101,4 +101,21 @@ jQuery(function ($) {
       }
     });
   });
+
+  // inview.js safariでの不具合修正のための措置
+
+  function setResponsiveImage() {
+    const imageElement = document.getElementById("responsive-image");
+    const windowWidth = window.innerWidth;
+
+    if (windowWidth > 768) {
+      imageElement.src = "./assets/images/common/price-pc.jpg";
+    } else {
+      imageElement.src = "./assets/images/common/price.jpg";
+    }
+  }
+
+  setResponsiveImage();
+
+  window.addEventListener("resize", setResponsiveImage);
 });
