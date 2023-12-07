@@ -55,7 +55,7 @@ $mediaquerys: (
     display: none;
     @include mq("md") {
       display: inline-block;
-    /* display: block */
+    /* 変更 - display: block */
     }
   }
 

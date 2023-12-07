@@ -30,7 +30,7 @@ body.is-noscroll {
 
 a:hover {
   opacity: 0.85;
-  transform: opacity 0.3s;
+  transition: opacity 0.3s;
 }
 
 // フォントウェイト
