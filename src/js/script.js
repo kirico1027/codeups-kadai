@@ -77,7 +77,7 @@ jQuery(function ($) {
   });
 
   // 画像のアニメーション
-  var box = $(".j-colorbox"),
+  var box = $(".js-colorbox"),
     speed = 700;
 
   box.each(function () {
