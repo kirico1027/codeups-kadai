@@ -1,12 +1,12 @@
 @use "global" as *;
 
 .footer {
-  padding: rem(47) 0 rem(56);
+  padding: rem(48) 0 rem(56);
   color: $white;
   background-color: $accent-color;
 
   @include mq(md) {
-    padding: rem(80) 0;
+    padding: rem(79) 0;
   }
 }
 
@@ -45,8 +45,7 @@
   padding-left: rem(2);
 
   @include mq(md) {
-    padding-bottom: rem(10);
-    ;
+    padding-bottom: rem(9);
     align-items: flex-end;
   }
 }
@@ -69,8 +68,8 @@
 }
 
 .footer__nav {
-  padding-left: rem(8);
-  margin-top: rem(43);
+  padding-left: rem(11);
+  margin-top: rem(42);
   width: calc(345 / 374 * 100vw);
   margin: auto;
 

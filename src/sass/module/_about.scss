@@ -63,7 +63,7 @@
     font-size: rem(80);
     line-height: calc(100 / 80);
     color: $white;
-    padding-top: rem(2);
+    padding-top: rem(3);
     margin-left: rem(-1);
   }
 }
@@ -86,6 +86,7 @@
   @include mq(md) {
     color: $white;
     width: rem(400);
+    padding-top: rem(2);
   }
 }
 

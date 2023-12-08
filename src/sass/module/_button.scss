@@ -141,7 +141,7 @@
   background: $white;
   position: absolute;
   content: "";
-  top: calc(50% + 1px);
+  top: calc(50% + rem(1.35));
   transform: translateY(-50%);
   right: -48px;
   border-radius: 4px;
