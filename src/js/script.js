@@ -55,7 +55,7 @@ jQuery(function ($) {
   jQuery(function ($) {
     var service_swiper = new Swiper(".js-campaign-swiper", {
       loop: true,
-      speed: 1000,
+      speed: 1800,
       slidesPerView: 1.28,
       spaceBetween: 24,
       autoplay: {
@@ -75,7 +75,6 @@ jQuery(function ($) {
     });
   });
 
-  
   // 画像のアニメーション
   var box = $(".js-colorbox"),
     speed = 700;

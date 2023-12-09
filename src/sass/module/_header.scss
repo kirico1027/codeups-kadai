@@ -51,6 +51,7 @@
 
 .header__nav-items {
   display: flex;
+  column-gap: rem(40.3);
   height: inherit;
 }
 
@@ -73,9 +74,11 @@
   padding-bottom: rem(3);
 }
 
+/*
 .header__nav-item:not(:first-child) a {
   margin-left: rem(40.3);
 }
+*/
 
 .header__nav-item a::after {
   content: '';
@@ -93,6 +96,11 @@
 
 .header__nav-item a:hover::after {
   transform: scale(1, 1);
+  opacity: 1;
+}
+
+.header__nav-item a:hover {
+  opacity: 1;
 }
 
 .header__nav-item span {

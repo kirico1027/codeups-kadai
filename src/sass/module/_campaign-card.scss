@@ -2,10 +2,11 @@
 
 .campaign-card {
   filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+  display: block;
 }
 
 .campaign-card a {
-  display: inline-block;
+  display: block;
   background-color: $white;
 }
 
