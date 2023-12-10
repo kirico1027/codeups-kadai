@@ -59,7 +59,7 @@ jQuery(function ($) {
       slidesPerView: 1.28,
       spaceBetween: 24,
       autoplay: {
-        delay: 2000,
+        delay: 200000000,
         disableOnInteraction: false,
       },
       breakpoints: {

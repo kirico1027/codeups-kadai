@@ -49,8 +49,9 @@
   margin-top: rem(44);
 
   @include mq(md) {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     margin-top: rem(30);
-    column-gap: rem(40);
+    gap: rem(40);
   }
 }

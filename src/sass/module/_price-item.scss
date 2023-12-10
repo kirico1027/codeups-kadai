@@ -31,3 +31,11 @@
     line-height: calc(24 / 16);
   }
 }
+
+.price-item__price {
+  padding-left: rem(5);
+
+  @include mq(md) {
+  padding-left: rem(10);
+  }
+}

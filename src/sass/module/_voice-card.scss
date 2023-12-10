@@ -18,6 +18,8 @@
   display: inline-block;
   background-color: $white;
 
+  height: 100%;
+
   @include mq(md) {
     padding: rem(24);
   }
