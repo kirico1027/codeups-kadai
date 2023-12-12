@@ -11,8 +11,8 @@
 .campaign-swiper__button-wrap {
   display: flex;
   position: absolute;
-  right: calc(50% - rem(370));
-  top: rem(-78);
+  right: 14px;
+  top: 22px;
 }
 
 .campaign-swiper__button-wrap .swiper-button-prev,
@@ -40,12 +40,12 @@
   display: block;
   width: rem(40);
   height: 1px;
-  background: $accent-color;
   position: absolute;
   top: calc(50% + rem(2));
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 4px;
+  background: $accent-color;
 }
 
 .campaign-swiper__button-wrap .swiper-button-prev::after,

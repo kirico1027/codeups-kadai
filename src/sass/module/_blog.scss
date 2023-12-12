@@ -1,8 +1,7 @@
 @use "global" as *;
 
 .blog {
-  padding-top: rem(85);
-  padding-bottom: rem(4);
+  padding-top: rem(83);
 
   @include mq(md) {
     padding-top: rem(101);

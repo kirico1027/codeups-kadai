@@ -51,8 +51,8 @@
 
 .header__nav-items {
   display: flex;
-  column-gap: rem(40.3);
   height: inherit;
+  column-gap: rem(40.3);
 }
 
 .header__nav-item {
@@ -73,12 +73,6 @@
   position: relative;
   padding-bottom: rem(3);
 }
-
-/*
-.header__nav-item:not(:first-child) a {
-  margin-left: rem(40.3);
-}
-*/
 
 .header__nav-item a::after {
   content: '';
@@ -168,33 +162,44 @@
   left: 0;
   width: 100%;
   height: 100vh;
+  /*
+  height: rem(667);
+  */
   background-color: $accent-color;
+}
+
+.header__drawer-wrapper {
+  width: 100%;
+  height: calc(100% - 80px);
+  margin-top: rem(80);
+  overflow-y: auto;
 }
 
 .header__drawer-nav {
   position: absolute;
-  top: calc(50% - rem(2));
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding-left: rem(18);
+  left: calc(50% - rem(3.5));
+  transform: translateX(-50%);
+  padding-left: rem(22);
   width: rem(338);
+
+  padding-top: rem(19);
 }
 
 .header__drawer-items {
   display: flex;
-  column-gap: rem(25);
+  column-gap: rem(24);
 }
 
 .header__drawer-content {
   display: flex;
   flex-direction: column;
-  row-gap: rem(42);
+  row-gap: rem(32.5);
 }
 
 .header__drawer-block {
   display: flex;
   flex-direction: column;
-  row-gap: rem(26);
+  row-gap: rem(15.5);
 }
 
 .header__drawer-item a {
@@ -205,6 +210,8 @@
   line-height: 1;
   letter-spacing: 0.03em;
   color: $white;
+
+  padding: rem(5) 0;
 }
 
 .header__drawer-item--main a {
@@ -216,7 +223,7 @@
 .header__drawer-item--main a::before {
   content: '';
   position: absolute;
-  top: -1px;
+  top: 4px;
   left: rem(-22);
   background-image: url(../images/common/drawer-starfish.png);
   background-size: cover;

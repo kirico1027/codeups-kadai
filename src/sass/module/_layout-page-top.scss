@@ -1,14 +1,14 @@
 @use "global" as *;
 
 .layout-page-top {
-  position: absolute;
+  position: fixed;
   right: rem(15);
   bottom: rem(16);
+  z-index: 9999;
   cursor: pointer;
 
   @include mq(md) {
     right: rem(20);
     bottom: rem(20);
-    filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
   }
 }

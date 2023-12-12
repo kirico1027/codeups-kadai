@@ -1,13 +1,5 @@
 @use "global" as *;
 
-.voice {
-  padding: rem(85) 0 rem(84);
-
-  @include mq(md) {
-    padding: rem(140) 0 rem(144);
-  }
-}
-
 .voice__illustration-wrapper {
   max-width: rem(1270);
   width: 100%;
@@ -35,7 +27,7 @@
   height: rem(162);
   position: absolute;
   right: rem(80);
-  bottom: rem(-70);
+  bottom: rem(-66);
   padding-right: rem(15);
   object-fit: contain;
   height: auto;

@@ -1,12 +1,10 @@
 @use "global" as *;
 
 .contact {
-  padding: rem(80) 0 rem(104);
   text-align: center;
   position: relative;
 
   @include mq(md) {
-    padding: rem(140) 0 rem(160);
     filter: initial;
   }
 }
@@ -19,11 +17,11 @@
 }
 
 .contact__illustration {
-  width: rem(124);
-  height: rem(50);
+  width: calc((124 / 375) * 100vw);
+  height: calc((50 / 375) * 100vw);
   position: absolute;
   right: rem(0);
-  top: rem(-27);
+  top: rem(-26);
   padding-right: rem(15);
 
   @include mq(md) {
@@ -77,13 +75,15 @@
 
   @include mq(md) {
     flex: 1;
-    margin-top: rem(22);
+    margin-top: rem(21);
     padding-left: rem(17);
     filter: initial;
   }
 }
 
 .contact__logo {
+  border-bottom: 1px solid $accent-color;
+
   @include mq(md) {
     padding-bottom: rem(2);
   }
@@ -99,20 +99,19 @@
 }
 
 .contact__body {
-  border-top: 1px solid $accent-color;
-  padding-top: rem(14);
+  margin-top: rem(14);
 
   @include mq(md) {
     display: flex;
-    column-gap: rem(21);
-    padding-top: rem(24);
+    justify-content: space-between;
+    margin-top: rem(24);
     filter: initial;
   }
 }
 
 .contact__info {
   @include mq(md) {
-    flex: 1;
+    width: 33.19%;
     text-align: left;
     margin-top: rem(-2);
   }
@@ -125,6 +124,7 @@
   font-weight: $regular;
   color: $title-color;
   line-height: calc(28 / 16);
+  white-space: nowrap;
 }
 
 .contact__map-wrap {
@@ -134,6 +134,7 @@
   @include mq(md) {
     width: 62%;
     margin-top: 0;
+    margin-left: rem(25);
     filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
   }
 }

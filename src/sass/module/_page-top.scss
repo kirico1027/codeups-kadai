@@ -1,17 +1,24 @@
 @use "global" as *;
 
 .page-top {
-
   width: rem(48);
   height: rem(48);
-  background-color: $white;
+  background-color: rgba(255,255,255,0.8);
   border-radius: 50%;
   border: 1px solid $accent-color;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
 
   @include mq(md) {
     width: rem(80);
     height: rem(80);
   }
+}
+
+.page-top.is-show {
+  opacity: 1;
+  visibility: visible;
 }
 
 .page-top::before {

@@ -2,10 +2,11 @@
 
 .button__wrapper {
   text-align: center;
+  padding-bottom: rem(6);
 }
 
 .button__wrapper--campaign {
-  margin-top: rem(36);
+  margin-top: rem(35);
 
   @include mq(md) {
     margin-top: rem(76);
@@ -24,7 +25,7 @@
 }
 
 .button__wrapper--information {
-  margin-top: rem(40);
+  margin-top: rem(39.5);
   padding-right: rem(4);
 
   @include mq(md) {
@@ -38,13 +39,13 @@
   padding-right: rem(4);
 
   @include mq(md) {
-    margin-top: rem(80);
+    margin-top: rem(79);
     padding-right: rem(6);
   }
 }
 
 .button__wrapper--voice {
-  margin-top: rem(39);
+  margin-top: rem(40);
   padding-right: rem(4);
 
   @include mq(md) {
@@ -94,6 +95,7 @@
 .button::before {
   position: absolute;
   content: "";
+  display: inline-block;
   top: 4px;
   left: 4px;
   width: calc(100% + 2px);
@@ -105,6 +107,7 @@
 .button::after {
   background: $white;
   position: absolute;
+  display: inline-block;
   top: 0;
   left: 0;
   content: '';
@@ -132,6 +135,7 @@
   right: calc(50% - 86px);
   transform: rotate(40deg);
   border-radius: 4px;
+  z-index: 1;
 }
 
 .button span::after {

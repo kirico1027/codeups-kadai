@@ -1,11 +1,11 @@
 @use "global" as *;
 
 .price {
-  padding: rem(83) 0 rem(84);
+  padding: rem(83) 0 rem(78);
   background-color: $accent-bg;
 
   @include mq(md) {
-    padding: rem(100) 0 rem(103);
+    padding: rem(100) 0 rem(99);
   }
 }
 
@@ -44,7 +44,7 @@
   height: auto;
 
   @include mq(md) {
-    aspect-ratio: 492 / 746;
+    aspect-ratio: 492 / 745;
   }
 }
 
@@ -63,7 +63,7 @@
   height: rem(201);
   position: absolute;
   left: rem(0);
-  bottom: rem(-43);
+  bottom: rem(-39);
   padding-left: rem(15);
 
   @include mq(md) {

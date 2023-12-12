@@ -1,28 +1,27 @@
 @use "global" as *;
 
 .section-title {
-  color: $accent-color;
+  color: $title-color;
   font-weight: $regular;
 }
 
 .section-title__main {
   font-family: $second-font-family;
   font-size: rem(32);
-
   line-height: 1;
-  text-align: center;
+  text-align: center; 
 
   @include mq(md) {
     font-size: rem(40);
   }
 }
 
-.section-title__main span {
-  color: $title-color;
+.section-title__main::first-letter {
+  color: $accent-color;
 }
 
 .section-title__main--blog,
-.section-title__main--blog span,
+.section-title__main--blog::first-letter,
 .section-title__sub--blog {
   @include mq(md) {
     color: $white;

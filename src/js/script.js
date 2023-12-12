@@ -107,7 +107,7 @@ jQuery(function ($) {
     const imageElement = document.getElementById("responsive-image");
     const windowWidth = window.innerWidth;
 
-    if (windowWidth > 768) {
+    if (windowWidth > 767) {
       imageElement.src = "./assets/images/common/price-pc.jpg";
     } else {
       imageElement.src = "./assets/images/common/price.jpg";
@@ -117,4 +117,14 @@ jQuery(function ($) {
   setResponsiveImage();
 
   window.addEventListener("resize", setResponsiveImage);
+
+// トップページへ
+  $(window).on("scroll", function () {
+    if ($(this).scrollTop() > 600) {
+      $('.page-top').addClass('is-show');
+    } else {
+      $('.page-top').removeClass('is-show');
+    }
+  });
+
 });

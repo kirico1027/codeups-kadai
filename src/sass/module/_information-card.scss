@@ -27,11 +27,11 @@
 .information-card__body {
   font-family: $base-font-family;
   color: $title-color;
-  padding-top: rem(25);
+  margin-top: rem(25);
 
   @include mq(md) {
     flex: 1;
-    padding-top: rem(62);
+    margin-top: rem(61);
   }
 }
 
