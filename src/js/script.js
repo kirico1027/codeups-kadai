@@ -23,12 +23,14 @@ jQuery(function ($) {
     });
 
     function openDrawer() {
+      $(".js-header").addClass("is-open");
       $(".js-drawer").fadeIn();
       $(".js-hamburger").addClass("is-open");
-      $("body").toggleClass("is-noscroll");
+      $("body").addClass("is-noscroll");
     }
 
     function closeDrawer() {
+      $(".js-header").removeClass("is-open");
       $(".js-drawer").fadeOut();
       $(".js-hamburger").removeClass("is-open");
       $("body").removeClass("is-noscroll");
@@ -40,7 +42,6 @@ jQuery(function ($) {
     const mv_swiper = new Swiper(".js-mv-swiper", {
       loop: true,
       speed: 2000,
-      effect: "fade",
       fadeEffect: {
         crossFade: true,
       },
@@ -53,18 +54,18 @@ jQuery(function ($) {
 
   // campaign-swiper
   jQuery(function ($) {
-    var service_swiper = new Swiper(".js-campaign-swiper", {
+    var campaign_swiper = new Swiper(".js-campaign-swiper", {
       loop: true,
       speed: 1800,
-      slidesPerView: 1.28,
+      effect: "slide",
+      slidesPerView: 'auto',
       spaceBetween: 24,
       autoplay: {
-        delay: 200000000,
+        delay: 2000000000000000000000000,
         disableOnInteraction: false,
       },
       breakpoints: {
         768: {
-          slidesPerView: 3.9567,
           spaceBetween: 39.7,
         },
       },

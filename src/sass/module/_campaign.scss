@@ -2,6 +2,7 @@
 
 .campaign {
   overflow: hidden;
+  padding-bottom: rem(6);
 }
 
 .campaign__inner {
@@ -17,6 +18,68 @@
   }
 }
 
+.campaign__button-wrap {
+  display: flex;
+  position: absolute;
+  right: 14px;
+  top: 22px;
+}
+
+.campaign__button-wrap .swiper-button-prev,
+.campaign__button-wrap .swiper-button-next {
+  display: none;
+  position: relative;
+  width: rem(80);
+  height: rem(80);
+  background-color: $white;
+  border-radius: 50%;
+  border: 1px solid $accent-color;
+
+  @include mq(md) {
+    display: block;
+  }
+}
+
+.campaign__button-wrap .swiper-button-next {
+  margin-left: rem(100);
+}
+
+.campaign__button-wrap .swiper-button-prev::before,
+.campaign__button-wrap .swiper-button-next::before {
+  content: "";
+  display: block;
+  width: rem(40);
+  height: 1px;
+  position: absolute;
+  top: calc(50% + rem(2));
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 4px;
+  background: $accent-color;
+}
+
+.campaign__button-wrap .swiper-button-prev::after,
+.campaign__button-wrap .swiper-button-next::after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 1px;
+  background: $accent-color;
+  position: absolute;
+  top: calc(50% - 1.5px);
+  border-radius: 4px;
+}
+
+.campaign__button-wrap .swiper-button-prev::after {
+  left: calc(50% - rem(22));
+  transform: rotate(-40deg);
+}
+
+.campaign__button-wrap .swiper-button-next::after {
+  right: calc(50% - rem(22));
+  transform: rotate(40deg);
+}
+
 .campaign__swiper {
   margin-right: calc(50% - 50vw);
   width: 100vw;
@@ -24,5 +87,13 @@
 
   @include mq(md) {
   margin-top: rem(35);
+  }
+}
+
+.campaign__cards {
+  padding: rem(5);
+
+  @include mq(md) {
+  margin-left: rem(-5);
   }
 }

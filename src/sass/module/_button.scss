@@ -2,7 +2,6 @@
 
 .button__wrapper {
   text-align: center;
-  padding-bottom: rem(6);
 }
 
 .button__wrapper--campaign {
@@ -39,7 +38,7 @@
   padding-right: rem(4);
 
   @include mq(md) {
-    margin-top: rem(79);
+    margin-top: rem(81);
     padding-right: rem(6);
   }
 }

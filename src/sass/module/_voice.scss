@@ -1,49 +1,50 @@
 @use "global" as *;
 
-.voice__illustration-wrapper {
-  max-width: rem(1270);
-  width: 100%;
-  margin: auto;
-  position: relative;
-}
-
-.voice__illustration-top {
-  display: none;
-  width: rem(316);
-  height: rem(138);
-  position: absolute;
-  left: rem(0);
-  top: rem(-120);
-  padding-left: rem(15);
-
-  @include mq(md) {
-    display: block;
-  }
-}
-
-.voice__illustration-bottom {
-  display: none;
-  width: rem(86);
-  height: rem(162);
-  position: absolute;
-  right: rem(80);
-  bottom: rem(-66);
-  padding-right: rem(15);
-  object-fit: contain;
-  height: auto;
-
-  @include mq(md) {
-    display: block;
-  }
-}
-
 .voice__cards {
-  margin-top: rem(44);
+  margin-top: rem(45);
+  position: relative;
 
   @include mq(md) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin-top: rem(30);
+    margin-top: rem(31);
     gap: rem(40);
+  }
+}
+
+.voice__cards::before {
+  content: '';
+  position: absolute;
+  display: none;
+  width: rem(301);
+  height: rem(138);
+  background-image: url(../images/common/voice-illustration-top.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  left: calc(50% - min(48vw, rem(620)));
+  top: rem(-215);
+
+  @include mq(md) {
+    display: block;
+  }
+}
+
+
+.voice__cards::after {
+  content: '';
+  position: absolute;
+  display: none;
+  width: rem(71);
+  height: rem(162);
+  background-image: url(../images/common/voice-illustration-bottom.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  right: calc(50% - min(48vw, rem(540)));
+  bottom: rem(-207);
+
+  @include mq(md) {
+    display: block;
   }
 }
