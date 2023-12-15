@@ -168,10 +168,6 @@
   width: 100%;
   height: calc(100vh - 80px);
   margin-top: rem(80);
-  /*
-  height: rem(667);
-  */
-
   background-color: $accent-color;
   overflow-y: scroll;
 }
@@ -179,7 +175,7 @@
 .header__drawer-wrapper {
   width: 100%;
   height: 100%;
-  margin-top: rem(19);
+  padding-top: rem(19);
 }
 
 .header__drawer-nav {

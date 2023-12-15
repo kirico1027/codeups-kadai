@@ -9,17 +9,14 @@
 
   @include mq(md) {
     margin-top: rem(76);
-    padding-right: rem(5);
   }
 }
 
 .button__wrapper--about {
   margin-top: rem(50);
-  padding-right: rem(17);
 
   @include mq(md) {
     margin-top: rem(40);
-    padding-right: rem(5);
   }
 }
 
@@ -35,17 +32,14 @@
 
 .button__wrapper--blog {
   margin-top: rem(39);
-  padding-right: rem(4);
 
   @include mq(md) {
     margin-top: rem(81);
-    padding-right: rem(6);
   }
 }
 
 .button__wrapper--voice {
   margin-top: rem(40);
-  padding-right: rem(4);
 
   @include mq(md) {
     margin-top: rem(80);
@@ -54,7 +48,6 @@
 
 .button__wrapper--price {
   margin-top: rem(40);
-  padding-right: rem(4);
 
   @include mq(md) {
     margin-top: rem(79);
@@ -62,12 +55,10 @@
 }
 
 .button__wrapper--contact {
-  margin-top: rem(39);
-  padding-right: rem(4);
+  margin-top: rem(40);
 
   @include mq(md) {
     margin-top: rem(40);
-    padding-right: rem(2);
 
   }
 }

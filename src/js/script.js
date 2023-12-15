@@ -42,6 +42,7 @@ jQuery(function ($) {
     const mv_swiper = new Swiper(".js-mv-swiper", {
       loop: true,
       speed: 2000,
+      effect: "fade",
       fadeEffect: {
         crossFade: true,
       },
@@ -57,11 +58,10 @@ jQuery(function ($) {
     var campaign_swiper = new Swiper(".js-campaign-swiper", {
       loop: true,
       speed: 1800,
-      effect: "slide",
-      slidesPerView: 'auto',
+      slidesPerView: "auto",
       spaceBetween: 24,
       autoplay: {
-        delay: 2000000000000000000000000,
+        delay: 2000,
         disableOnInteraction: false,
       },
       breakpoints: {

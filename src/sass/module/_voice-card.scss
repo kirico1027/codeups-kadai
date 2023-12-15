@@ -90,7 +90,7 @@
 
   @include mq(md) {
     font-size: rem(24);
-    margin-top: rem(7);
+    margin-top: rem(9);
     line-height: 1.45;
   }
 }
@@ -121,6 +121,6 @@
   margin-top: rem(16);
 
   @include mq(md) {
-    margin-top: rem(40);
+    margin-top: rem(39.5);
   }
 }

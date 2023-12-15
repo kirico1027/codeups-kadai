@@ -27,7 +27,7 @@
 .information-card__body {
   font-family: $base-font-family;
   color: $title-color;
-  margin-top: rem(26);
+  margin-top: rem(25.5);
 
   @include mq(md) {
     flex: 1;
