@@ -28,7 +28,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  right: calc(50% - min(48vw,rem(637)));
+  right: calc(50% - min(48vw, rem(637)));
   bottom: rem(-90);
 
   @include mq(md) {

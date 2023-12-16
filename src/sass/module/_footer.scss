@@ -132,9 +132,7 @@
   font-weight: $regular;
   padding: rem(5) 0;
 
-  @include mq(md) {
-
-  }
+  @include mq(md) {}
 }
 
 .footer__nav-item--main a {

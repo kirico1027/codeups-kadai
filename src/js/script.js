@@ -119,13 +119,12 @@ jQuery(function ($) {
 
   window.addEventListener("resize", setResponsiveImage);
 
-// トップページへ
+  // トップページへ
   $(window).on("scroll", function () {
     if ($(this).scrollTop() > 600) {
-      $('.page-top').addClass('is-show');
+      $(".page-top").addClass("is-show");
     } else {
-      $('.page-top').removeClass('is-show');
+      $(".page-top").removeClass("is-show");
     }
   });
-
 });

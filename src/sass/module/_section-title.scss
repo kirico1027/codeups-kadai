@@ -9,7 +9,7 @@
   font-family: $second-font-family;
   font-size: rem(32);
   line-height: 1;
-  text-align: center; 
+  text-align: center;
 
   @include mq(md) {
     font-size: rem(40);
