@@ -5,6 +5,9 @@
   display: block;
   height: auto;
   width: rem(280);
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-transform-style: preserve-3d;
 
   @include mq(md) {
     width: rem(333);
