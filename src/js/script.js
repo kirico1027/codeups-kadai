@@ -102,23 +102,6 @@ jQuery(function ($) {
     });
   });
 
-  // inview.js safariでの不具合修正のための措置
-
-  function setResponsiveImage() {
-    const imageElement = document.getElementById("responsive-image");
-    const windowWidth = window.innerWidth;
-
-    if (windowWidth > 767) {
-      imageElement.src = "./assets/images/common/price-pc.jpg";
-    } else {
-      imageElement.src = "./assets/images/common/price.jpg";
-    }
-  }
-
-  setResponsiveImage();
-
-  window.addEventListener("resize", setResponsiveImage);
-
   // トップページへ
   $(window).on("scroll", function () {
     if ($(this).scrollTop() > 600) {

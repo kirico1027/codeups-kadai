@@ -48,6 +48,8 @@
 }
 
 .price__image {
+  display: inline-block;
+
   @include mq(md) {
     width: 45.682%
   }

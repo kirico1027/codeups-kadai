@@ -5,12 +5,25 @@
 
   @include mq(md) {
     padding-top: rem(100);
-    background-image: url(../images/common/blog-bg.jpg);
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-size: 100vw 60.2%;
+    position: relative;
   }
 }
+
+.blog::before {
+  @include mq(md) {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    background-image: url(../images/common/blog-bg.jpg);
+    background-size: cover;
+    width: 100%;
+    height: rem(500);
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+}
+
 
 .blog__inner {
   width: 100%;
@@ -32,9 +45,6 @@
   position: relative;
 
   @include mq(md) {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: rem(40);
     margin-top: rem(80);
   }
 }

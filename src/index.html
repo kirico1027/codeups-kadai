@@ -371,7 +371,7 @@
           <p class="section-title__main section-title__main--blog">Blog</p>
           <h2 class="section-title__sub section-title__sub--blog">ブログ</h2>
         </div>
-        <ul class="blog__cards">
+        <ul class="blog__cards blog-cards">
           <li class="blog__card blog-card">
             <a href="#">
               <div class="blog-card__item">
@@ -430,7 +430,7 @@
           <p class="section-title__main">Voice</p>
           <h2 class="section-title__sub">お客様の声</h2>
         </div>
-        <ul class="voice__cards">
+        <ul class="voice__cards voice-cards">
           <li class="voice__card voice-card">
             <a href="#">
               <div class="voice-card__item">
@@ -487,10 +487,10 @@
         </div>
         <div class="price__container">
           <div class="price__content">
-            <div class="price__image js-colorbox">
-              <img src="./assets/images/common/price.jpg" alt="海底の岩場にひしめくサンゴとその周りに群れる赤色の鮮やかな小魚の画像" id="responsive-image"
-                loading="lazy">
-            </div>
+            <picture class="price__image js-colorbox">
+              <source srcset="./assets/images/common/price-pc.jpg" media="(min-width: 768px)" type="image/jpg">
+              <img src="./assets/images/common/price.jpg" alt="海底の岩場にひしめくサンゴとその周りに群れる赤色の鮮やかな小魚の画像" loading="lazy">
+            </picture>
             <div class="price__items">
               <dl class="price__item price-item">
                 <h3 class="price-item__title">ライセンス講習</h3>
