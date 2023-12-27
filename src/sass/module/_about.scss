@@ -43,6 +43,7 @@
   left: 0;
   z-index: 2;
   height: auto;
+  display: block;
 
   @include mq(md) {
     top: rem(-79)
