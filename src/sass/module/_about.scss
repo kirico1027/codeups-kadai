@@ -4,118 +4,12 @@
   position: relative;
 }
 
-.about__container {
-  margin-top: rem(54);
+.about__main-image {
+  margin-top: rem(24);
 
   @include mq(md) {
-    margin-top: rem(120);
+    margin-top: rem(40);
     position: relative;
   }
 }
 
-.about__image {
-  width: 100%;
-  position: relative;
-}
-
-.about__image::after {
-  content: '';
-  position: absolute;
-  display: none;
-  width: rem(194);
-  height: rem(181);
-  background-image: url(../images/common/about-illustration.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  right: calc(50% - min(48vw, rem(637)));
-  bottom: rem(-90);
-
-  @include mq(md) {
-    display: block;
-  }
-}
-
-.about__image-left {
-  width: 37.1%;
-  position: absolute;
-  top: rem(-26);
-  left: 0;
-  z-index: 2;
-  height: auto;
-  display: block;
-
-  @include mq(md) {
-    top: rem(-79)
-  }
-}
-
-.about__image-left img {
-  aspect-ratio: 128/194;
-  object-fit: cover;
-
-  @include mq(md) {
-    aspect-ratio: 400/606;
-  }
-
-}
-
-.about__image-right img {
-  width: 81.449%;
-  aspect-ratio: 281 / 186;
-  object-fit: cover;
-  height: auto;
-  margin-left: auto;
-}
-
-.about__body {
-  margin-top: rem(40);
-
-  @include mq(md) {
-    display: flex;
-    position: absolute;
-    top: calc(50% - rem(50));
-    left: calc(50% + rem(80));
-    transform: translate(-50%, -50%);
-    margin-top: 0;
-    column-gap: calc((40 / 1440) * 100vw);
-    z-index: 3;
-  }
-}
-
-.about__body-title {
-  font-family: $second-font-family;
-  font-size: rem(40);
-  font-weight: $regular;
-  line-height: 1.02;
-  color: $accent-color;
-
-  @include mq(md) {
-    font-size: rem(80);
-    line-height: calc(100 / 80);
-    color: $white;
-    margin-left: rem(-1);
-    padding-top: rem(2);
-  }
-}
-
-.about__box {
-  margin-top: rem(14.5);
-
-  @include mq(md) {
-    margin-top: 0;
-  }
-}
-
-.about__text {
-  font-family: $base-font-family;
-  font-size: rem(16);
-  font-weight: $regular;
-  line-height: calc(24 / 16);
-  color: $title-color;
-
-  @include mq(md) {
-    color: $white;
-    width: rem(400);
-  }
-}

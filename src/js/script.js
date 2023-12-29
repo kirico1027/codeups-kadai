@@ -57,7 +57,7 @@ jQuery(function ($) {
   jQuery(function ($) {
     var campaign_swiper = new Swiper(".js-campaign-swiper", {
       loop: true,
-      speed: 1800,
+      speed: 180000000000000000000000000000,
       slidesPerView: "auto",
       spaceBetween: 24,
       autoplay: {

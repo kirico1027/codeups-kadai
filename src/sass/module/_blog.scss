@@ -80,3 +80,12 @@
     display: block;
   }
 }
+
+.blog__button {
+  text-align: center;
+  margin-top: rem(39);
+
+  @include mq(md) {
+    margin-top: rem(81);
+  }
+}

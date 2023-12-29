@@ -17,3 +17,12 @@
     margin-left: rem(-3);
   }
 }
+
+.information__button {
+  text-align: center;
+  margin-top: rem(39.5);
+
+  @include mq(md) {
+    margin-top: rem(39);
+  }
+}
