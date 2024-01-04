@@ -57,7 +57,7 @@ jQuery(function ($) {
   jQuery(function ($) {
     var campaign_swiper = new Swiper(".js-campaign-swiper", {
       loop: true,
-      speed: 180000000000000000000000000000,
+      speed: 1800,
       slidesPerView: "auto",
       spaceBetween: 24,
       autoplay: {
@@ -110,4 +110,42 @@ jQuery(function ($) {
       $(".page-top").removeClass("is-show");
     }
   });
+
+  // モーダル
+  $(function ()
+	{$(".page-about-gallery__container img").click(function() {
+    $(".modal-image").html($(this).prop('outerHTML'));
+    $(".modal-image").fadeIn(500);
+    $("body").addClass("is-noscroll");
+  });
+  $(".modal-image, .modal-image img").click(function() {
+    $(".modal-image").fadeOut(500);
+    $("body").removeClass("is-noscroll");
+  });
+});
+
+// タブ
+jQuery(function ($) {
+  $('.js-tab-menu').on('click', function () {
+      $('.js-tab-menu').removeClass('is-active');
+      $('.js-tab-content').removeClass('is-active');
+      $(this).addClass('is-active');
+      var number = $(this).data("number");
+      $('#' + number).addClass('is-active');
+  });
+});
+
+
+$(function () {
+  $(".js-accordion__box .js-accordion__month").css(
+    "display",
+    "block"
+  );
+  $(".js-accordion__box .js-accordion__year").addClass("is-open");
+  $(".js-accordion__year").on("click", function () {
+    $(this).toggleClass("is-open");
+    $(this).next().slideToggle(300);
+  });
+});
+
 });

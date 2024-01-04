@@ -1,0 +1,25 @@
+@use "global" as *;
+
+.home-campaign__cards {
+  display: flex;
+  flex-direction: column;
+  row-gap: rem(40);
+  margin-top: rem(24);
+}
+
+.home-campaign .campaign-card {
+  width: auto;
+}
+
+.home-campaign .campaign-card__img img {
+  aspect-ratio: 294/188;
+}
+
+.home-campaign .campaign-card__title-main {
+  text-align: center;
+}
+
+.home-campaign__button {
+  text-align: center;
+  margin-top: rem(40);
+}

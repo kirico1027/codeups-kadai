@@ -1,0 +1,33 @@
+@use "global" as *;
+
+.home-article-title p {
+  position: relative;
+  font-family: $base-font-family;
+  font-size:  rem(24);
+  font-weight: $regular;
+  line-height: 1;
+  padding: 13px 0 13px 70px;
+}
+
+.home-article-title p::before {
+    position: absolute;
+    content: "";
+    width: 8px;
+    height: 100%;
+    background-color: $accent-color;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.home-article-title p::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  transform: translateY(-50%);
+  left: rem(18);
+  background-size: contain;
+  width: rem(45);
+  height: rem(45);
+  background-image: url("../images/common/home-article-title.svg");
+}

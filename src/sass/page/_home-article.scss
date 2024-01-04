@@ -1,0 +1,11 @@
+@use "global" as *;
+
+.home-article__inner {
+  padding: 0 rem(25);
+}
+
+.home-article__container {
+  display: flex;
+  flex-direction: column;
+  row-gap: rem(80);
+}

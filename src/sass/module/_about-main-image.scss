@@ -7,24 +7,6 @@
   justify-content: space-between;
 }
 
-.about-main-image__image::after {
-  content: '';
-  position: absolute;
-  display: none;
-  width: rem(194);
-  height: rem(181);
-  background-image: url(../images/common/about-illustration.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  right: calc(50% - min(48vw, rem(637)));
-  bottom: rem(-90);
-
-  @include mq(md) {
-    display: block;
-  }
-}
-
 .about-main-image__image-left {
   width: 37.1%;
   z-index: 2;
@@ -57,7 +39,7 @@
   }
 }
 
-.about-main-image__image-right img {  
+.about-main-image__image-right img {
   aspect-ratio: 281 / 186;
   object-fit: cover;
 }

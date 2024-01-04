@@ -1,0 +1,63 @@
+@use "global" as *;
+
+.sub-mv {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: rem(460);
+  position: relative;
+
+  @include mq(md) {
+    height: rem(548);
+  }
+}
+
+.sub-mv--campaign {
+  background-image: url(../images/common/sub-mv-campaign.jpg);
+  @include mq(md) {
+    background-image: url(../images/common/sub-mv-campaign-pc.jpg);
+  }
+}
+
+.sub-mv--about {
+  background-image: url(../images/common/sub-mv-about.jpg);
+
+  @include mq(md) {
+    background-image: url(../images/common/sub-mv-about-pc.jpg);
+  }
+}
+
+.sub-mv--info {
+  background-image: url(../images/common/sub-mv-info.jpg);
+
+  @include mq(md) {
+    background-image: url(../images/common/sub-mv-info-pc.jpg);
+  }
+}
+
+.sub-mv--blog {
+  background-image: url(../images/common/sub-mv-blog.jpg);
+
+  @include mq(md) {
+    background-image: url(../images/common/sub-mv-blog-pc.jpg);
+  }
+}
+
+.sub-mv__title {
+  font-family: $third-font-family;
+  font-size: min(10.666vw, rem(52));
+  font-weight: $regular;
+  line-height: 1;
+  color: $white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+
+  @include mq(md) {
+    font-size: rem(80);
+    top: calc(50% - rem(-50))
+  }
+}

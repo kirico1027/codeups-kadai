@@ -67,20 +67,6 @@
   }
 }
 
-.blog__illustration {
-  display: none;
-  width: rem(452);
-  height: rem(201);
-  position: absolute;
-  left: rem(0);
-  top: rem(-76);
-  padding-left: rem(15);
-
-  @include mq(md) {
-    display: block;
-  }
-}
-
 .blog__button {
   text-align: center;
   margin-top: rem(39);

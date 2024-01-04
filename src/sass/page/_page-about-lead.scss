@@ -1,0 +1,68 @@
+@use "global" as *;
+
+.page-about-lead__content {
+  position: relative;
+
+  @include mq(md) {
+    display: none;
+  }
+}
+
+.page-about-lead__content::before,
+.page-about-lead__content-sub::before{
+  content: '';
+  position: absolute;
+  width: calc((120 / 375) * 100vw);
+  height: calc((55 / 375) * 100vw);
+  background-image: url(../images/common/fish-illustration-right.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  left: calc(50% - min(46.5vw, rem(630)));
+  top: rem(-25);
+
+  @include mq(md) {
+    width: rem(301);
+    height: rem(138);
+    left: calc(50% - min(48vw, rem(622)));
+    top: rem(-70);
+  }
+}
+
+.page-about-lead__content-sub {
+  display: none;
+
+  @include mq(md) {
+    display: block;
+    position: relative;
+  }
+}
+
+.page-about-lead__image-left {
+  display: none;
+}
+
+.page-about-lead__image-right img {
+  aspect-ratio: 345/228;
+  object-fit: cover;
+  height: auto;
+}
+
+.page-about-lead__body-title {
+  font-family: $second-font-family                    ;
+  font-size: min(10.666vw, rem(50));
+  font-weight: $regular;
+  line-height: 1.02;
+  color: $white;
+  position: absolute;
+  top: 7%;
+  left: 6%;
+}
+
+.about-main-image__text {
+  font-family: $base-font-family;
+  font-size: rem(16);
+  font-weight: $regular;
+  line-height: calc(24/16);
+  color: $title-color;
+}

@@ -1,0 +1,67 @@
+@use "global" as *;
+
+.home-accordion__year {
+  position: relative;
+  padding: rem(5) 0;
+  cursor: pointer;
+  background-color: $white;
+}
+
+
+.home-accordion__year span {
+  font-family: $base-font-family;
+  font-size: rem(24);
+  color: $accent-color;
+  font-weight: $regular;
+  line-height: 1;
+  display: inline-block;
+  position: relative;
+}
+
+.home-accordion__year span::before {
+  position: absolute;
+  content: "";
+  top: calc(50% + rem(2));
+  transform: translateY(-50%);
+  left: rem(-30);
+  display: inline-block;
+  border-style: solid;
+  border-width: 10px 0px 10px 18px;
+  border-color: transparent transparent transparent $accent-color ;
+  transition: all 0.3s;
+}
+
+.home-accordion__year.is-open span::before {
+  transform: translateY(rem(-10)) rotate(90deg);
+  transition: all 0.3s;
+}
+
+.home-accordion__month-box {
+  padding-left: rem(30);
+}
+
+.home-accordion__month {
+  display: none;
+  padding: rem(5) 0;
+}
+
+.home-accordion__month a {
+  font-family: $base-font-family;
+  font-size: rem(24);
+  color: $accent-color;
+  font-weight: $regular;
+  line-height: 1;
+  position: relative;
+}
+
+.home-accordion__month a::before {
+  position: absolute;
+  content: "";
+  top: calc(50% + rem(2));
+  transform: translateY(-50%);
+  left: rem(-30);
+  display: inline-block;
+  border-style: solid;
+  border-width: 10px 0px 10px 18px;
+  border-color: transparent transparent transparent $accent-color;
+}

@@ -14,12 +14,6 @@
   }
 }
 
-.campaign-card a {
-  display: block;
-  background-color: $white;
-  height: 100%;
-}
-
 .campaign-card a:hover {
   opacity: 1;
 }
@@ -27,6 +21,7 @@
 .campaign-card__item {
   display: flex;
   flex-direction: column;
+  background-color: $white;
   height: 100%;
 }
 
@@ -66,7 +61,7 @@
   }
 }
 
-.campaign-card__text-main {
+.campaign-card__title-main {
   font-family: $base-font-family;
   font-size: rem(16);
   font-weight: $medium;
@@ -81,7 +76,7 @@
   }
 }
 
-.campaign-card__text-sub {
+.campaign-card__title-sub {
   font-family: $base-font-family;
   font-size: rem(14);
   font-weight: $regular;
