@@ -1,10 +1,14 @@
 @use "global" as *;
 
-.home-article__inner {
+.sidebar__inner {
   padding: 0 rem(25);
+
+  @include mq(md) {
+    padding: 0;
+  }
 }
 
-.home-article__container {
+.sidebar__container {
   display: flex;
   flex-direction: column;
   row-gap: rem(80);

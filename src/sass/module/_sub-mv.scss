@@ -43,6 +43,49 @@
   }
 }
 
+.sub-mv--voice {
+  background-image: url(../images/common/sub-mv-voice.jpg);
+
+  @include mq(md) {
+    background-image: url(../images/common/sub-mv-voice-pc.jpg);
+  }
+}
+
+.sub-mv--faq {
+  background-image: url(../images/common/sub-mv-faq.jpg);
+
+  @include mq(md) {
+    background-image: url(../images/common/sub-mv-faq-pc.jpg);
+  }
+}
+
+.sub-mv--price {
+  background-image: url(../images/common/sub-mv-price.jpg);
+
+  @include mq(md) {
+    background-image: url(../images/common/sub-mv-price-pc.jpg);
+  }
+}
+
+.sub-mv--contact {
+  background-image: url(../images/common/sub-mv-contact.jpg);
+
+  @include mq(md) {
+    background-image: url(../images/common/sub-mv-contact-pc.jpg);
+  }
+}
+
+.sub-mv--others {
+  background-image: url(../images/common/sub-mv-others.jpg);
+
+  @include mq(md) {
+    background-image: url(../images/common/sub-mv-others-pc.jpg);
+  }
+}
+
+
+
+
 .sub-mv__title {
   font-family: $third-font-family;
   font-size: min(10.666vw, rem(52));

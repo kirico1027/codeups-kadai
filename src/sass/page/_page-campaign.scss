@@ -5,6 +5,7 @@
   justify-content: center;
   align-items: center;
   gap: rem(40) rem(40);
+  margin-top: rem(40);
 
   @include mq(md) {
     grid-template-columns: repeat(2, 1fr);
@@ -82,4 +83,8 @@
   @include mq(md) {
     display: block;
   }
+}
+
+.page-campaign__pagenavi .wp-pagenavi {
+  column-gap: rem(40);
 }

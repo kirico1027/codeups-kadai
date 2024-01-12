@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.home-article-title p {
+.sidebar-title {
   position: relative;
   font-family: $base-font-family;
   font-size:  rem(24);
@@ -9,7 +9,7 @@
   padding: 13px 0 13px 70px;
 }
 
-.home-article-title p::before {
+.sidebar-title::before {
     position: absolute;
     content: "";
     width: 8px;
@@ -20,7 +20,7 @@
     transform: translateY(-50%);
 }
 
-.home-article-title p::after {
+.sidebar-title::after {
   position: absolute;
   content: "";
   top: 50%;

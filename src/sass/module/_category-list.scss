@@ -1,13 +1,14 @@
 @use "global" as *;
 
 .category-list__items {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
   gap: rem(16) rem(21);
   margin: 0 auto;
   position: relative;
 
   @include mq(md) {
+    display: flex;
     gap: rem(16) rem(32);
   }
 }
@@ -23,6 +24,7 @@
   background-size: contain;
   left: calc(50% - min(46vw, rem(620)));
   top: rem(-24);
+  z-index: -1;
 
   @include mq(md) {
     width: rem(301);
@@ -39,13 +41,23 @@
   line-height: calc(22/14);
   color: #408f95;
   border: 1px solid #408f95;
-  width: rem(162);
+  /*width: rem(162);*/
   padding: rem(5) 0;
   text-align: center;
+
+  @include mq(md) {
+    width: rem(162);
+  }
 }
 
 .category-list__item.is-active {
   background-color: #408f95;
   color: $white;
+}
+
+.category-list__item a {
+  display: inline-block;
+  cursor: pointer;
+  width: 100%;
 }
 

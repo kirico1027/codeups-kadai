@@ -1,0 +1,30 @@
+@use "global" as *;
+
+.policy__title {
+  font-family: $base-font-family;
+  font-size: rem(24);
+  font-weight: $medium;
+  line-height: 1;
+
+  @include mq(md) {
+    font-size: rem(32);
+  }
+}
+
+.policy__content {
+  font-family: $base-font-family;
+  font-size: rem(16);
+  font-weight: $regular;
+  line-height: calc(32/16);
+  color: $title-color;
+  margin-top: rem(40);
+}
+
+.policy__box {
+  margin-top: rem(40);
+}
+
+.policy__list {
+  list-style-type: decimal;
+  margin-left: rem(22);
+}
