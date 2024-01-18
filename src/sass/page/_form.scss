@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.form__wrap {
+.form__item {
   padding-bottom: rem(24);
   border-bottom: 1px dotted $accent-color;
 
@@ -11,13 +11,13 @@
   }
 }
 
-.form__wrap.form__wrap--textarea {
+.form__item.form__item--textarea {
   @include mq(md) {
     align-items: flex-start;
   }
 }
 
-.form__wrap+.form__wrap {
+.form__item+.form__item {
   margin-top: rem(24);
 
   @include mq(md) {
@@ -45,12 +45,29 @@
   letter-spacing: 0.5em;
   text-indent: 0.5em;
   color: $white;
-  background-color: #c94800;
+  background-color: $point-color;
+}
+
+.form__input {
+	padding: rem(7) rem(16);
+	width: 100%;
+	font-size: rem(16);
+	line-height: 1;
+	border: 1px solid $accent-color;
+	cursor: pointer;
+}
+
+.form__textarea {
+  padding: rem(8) rem(15);
+  width: 100%;
+  height: rem(200);
+  font-size: rem(16);
+  border: 1px solid $accent-color;
+  resize: none;
 }
 
 .form__input,
 .form__select,
-.form__radio,
 .form__checkbox,
 .form__textarea {
   margin-top: rem(16);
@@ -88,6 +105,32 @@
   }
 }
 
-::placeholder {
+.form__input::placeholder {
   color: #ddf0f1;
+  font-size:  rem(16);
+  font-weight: $regular;
 }
+
+.form__item input.error,
+.form__item textarea.error,
+.form__checkbox-agree input.error {
+  border: solid 1px $point-color;
+  background-color: #F4DACC;
+  color: $white;
+}
+
+#form__error {
+  font-family: $base-font-family;
+  font-size: 14px;
+  font-weight: $regular;
+  line-height: 1.5;
+  color: $point-color;
+  padding-bottom: rem(40);
+  padding-inline: rem(60);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+

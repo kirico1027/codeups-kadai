@@ -11,12 +11,12 @@
   <meta name="description" content="ここに説明文が入ります。">
   <meta name="keywords" content="CodeUps">
   <!-- ogp -->
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
+  <meta property="og:title" content="ブログ | CodeUps">
+  <meta property="og:type" content="website">
   <meta property="og:url" content="">
   <meta property="og:image" content="">
-  <meta property="og:site_name" content="">
-  <meta property="og:description" content="">
+  <meta property="og:site_name" content="ブログ | CodeUps">
+  <meta property="og:description" content="ここに説明文が入ります。">
   <!-- ファビコン -->
   <link rel="”icon”" href="">
   <!-- google fonts -->
@@ -38,11 +38,11 @@
 <body>
   <header class="header js-header">
     <div class="header__inner">
-      <h1 class="header__logo">
+      <div class="header__logo">
         <a href="index.html">
           <img src="./assets/images/common/logo.svg" alt="CodeUps">
         </a>
-      </h1>
+      </div>
       <nav class="header__nav">
         <ul class="header__nav-items">
           <li class="header__nav-item">
@@ -167,7 +167,7 @@
       <div class="breadcrumb__inner inner">
         <!-- Breadcrumb NavXTで出力される部分 ここから -->
         <span class="breadcrumb__home">
-          <a href="#">
+          <a href="index.html">
             <span>TOP</span>
           </a>
         </span>
@@ -177,175 +177,178 @@
         <!-- Breadcrumb NavXTで出力される部分 ここまで -->
       </div>
     </div>
+
     <div class="home layout-home">
       <div class="home__inner inner">
         <div class="home__container">
 
           <div class="home__main">
-            <ul class="home__cards">
-              <li class="home__card blog-card">
-                <a href="#">
-                  <div class="blog-card__item">
-                    <figure class="blog-card__img">
-                      <img src="./assets/images/common/blog01.jpg" alt="海中の桜色のサンゴの画像" loading="lazy">
-                    </figure>
-                    <div class="blog-card__body">
-                      <time datetime="2023-11-17" class="blog-card__date date">2023.11/17</time>
-                      <h2 class="blog-card__title">ライセンス取得</h2>
-                      <p class="blog-card__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
-                        ここにテキストが入ります。ここにテキストが入ります。ここにテキスト</p>
+            <div class="home__main-inner">
+              <ul class="home__cards">
+                <li class="home__card blog-card">
+                  <a href="single.html">
+                    <div class="blog-card__item">
+                      <figure class="blog-card__img">
+                        <img src="./assets/images/common/blog01.jpg" alt="海中の桜色のサンゴの画像" loading="lazy">
+                      </figure>
+                      <div class="blog-card__body">
+                        <time datetime="2023-11-17" class="blog-card__date date">2023.11/17</time>
+                        <h2 class="blog-card__title">ライセンス取得</h2>
+                        <p class="blog-card__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
+                          ここにテキストが入ります。ここにテキストが入ります。ここにテキスト</p>
+                      </div>
                     </div>
-                  </div>
-                </a>
-              </li>
-              <li class="home__card blog-card">
-                <a href="#">
-                  <div class="blog-card__item">
-                    <figure class="blog-card__img">
-                      <img src="./assets/images/common/blog02.jpg" alt="海中を優雅に泳ぐウミガメの画像" loading="lazy">
-                    </figure>
-                    <div class="blog-card__body">
-                      <time datetime="2023-11-17" class="blog-card__date date">2023.11/17</time>
-                      <h2 class="blog-card__title">ウミガメと泳ぐ</h2>
-                      <p class="blog-card__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
-                        ここにテキストが入ります。ここにテキストが入ります。ここにテキスト</p>
+                  </a>
+                </li>
+                <li class="home__card blog-card">
+                  <a href="#">
+                    <div class="blog-card__item">
+                      <figure class="blog-card__img">
+                        <img src="./assets/images/common/blog02.jpg" alt="海中を優雅に泳ぐウミガメの画像" loading="lazy">
+                      </figure>
+                      <div class="blog-card__body">
+                        <time datetime="2023-11-17" class="blog-card__date date">2023.11/17</time>
+                        <h2 class="blog-card__title">ウミガメと泳ぐ</h2>
+                        <p class="blog-card__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
+                          ここにテキストが入ります。ここにテキストが入ります。ここにテキスト</p>
+                      </div>
                     </div>
-                  </div>
-                </a>
-              </li>
-              <li class="home__card blog-card">
-                <a href="#">
-                  <div class="blog-card__item">
-                    <figure class="blog-card__img">
-                      <img src="./assets/images/common/blog03.jpg" alt="イソギンチャクからひょっこり顔を出す色鮮やかなサカナの画像" loading="lazy">
-                    </figure>
-                    <div class="blog-card__body">
-                      <time datetime="2023-11-17" class="blog-card__date date">2023.11/17</time>
-                      <h2 class="blog-card__title">カクレクマノミ</h2>
-                      <p class="blog-card__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
-                        ここにテキストが入ります。ここにテキストが入ります。ここにテキスト</p>
+                  </a>
+                </li>
+                <li class="home__card blog-card">
+                  <a href="#">
+                    <div class="blog-card__item">
+                      <figure class="blog-card__img">
+                        <img src="./assets/images/common/blog03.jpg" alt="イソギンチャクからひょっこり顔を出す色鮮やかなサカナの画像" loading="lazy">
+                      </figure>
+                      <div class="blog-card__body">
+                        <time datetime="2023-11-17" class="blog-card__date date">2023.11/17</time>
+                        <h2 class="blog-card__title">カクレクマノミ</h2>
+                        <p class="blog-card__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
+                          ここにテキストが入ります。ここにテキストが入ります。ここにテキスト</p>
+                      </div>
                     </div>
-                  </div>
-                </a>
-              </li>
-              <li class="home__card blog-card">
-                <a href="#">
-                  <div class="blog-card__item">
-                    <figure class="blog-card__img">
-                      <img src="./assets/images/common/blog04.jpg" alt="イソギンチャクからひょっこり顔を出す色鮮やかなサカナの画像" loading="lazy">
-                    </figure>
-                    <div class="blog-card__body">
-                      <time datetime="2023-11-17" class="blog-card__date date">2023.11/17</time>
-                      <h2 class="blog-card__title">ライセンス取得</h2>
-                      <p class="blog-card__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
-                        ここにテキストが入ります。ここにテキストが入ります。ここにテキスト</p>
+                  </a>
+                </li>
+                <li class="home__card blog-card">
+                  <a href="#">
+                    <div class="blog-card__item">
+                      <figure class="blog-card__img">
+                        <img src="./assets/images/common/blog04.jpg" alt="イソギンチャクからひょっこり顔を出す色鮮やかなサカナの画像" loading="lazy">
+                      </figure>
+                      <div class="blog-card__body">
+                        <time datetime="2023-11-17" class="blog-card__date date">2023.11/17</time>
+                        <h2 class="blog-card__title">ライセンス取得</h2>
+                        <p class="blog-card__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
+                          ここにテキストが入ります。ここにテキストが入ります。ここにテキスト</p>
+                      </div>
                     </div>
-                  </div>
-                </a>
-              </li>
-              <li class="home__card blog-card">
-                <a href="#">
-                  <div class="blog-card__item">
-                    <figure class="blog-card__img">
-                      <img src="./assets/images/common/blog05.jpg" alt="イソギンチャクからひょっこり顔を出す色鮮やかなサカナの画像" loading="lazy">
-                    </figure>
-                    <div class="blog-card__body">
-                      <time datetime="2023-11-17" class="blog-card__date date">2023.11/17</time>
-                      <h2 class="blog-card__title">ウミガメと泳ぐ</h2>
-                      <p class="blog-card__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
-                        ここにテキストが入ります。ここにテキストが入ります。ここにテキスト</p>
+                  </a>
+                </li>
+                <li class="home__card blog-card">
+                  <a href="#">
+                    <div class="blog-card__item">
+                      <figure class="blog-card__img">
+                        <img src="./assets/images/common/blog05.jpg" alt="イソギンチャクからひょっこり顔を出す色鮮やかなサカナの画像" loading="lazy">
+                      </figure>
+                      <div class="blog-card__body">
+                        <time datetime="2023-11-17" class="blog-card__date date">2023.11/17</time>
+                        <h2 class="blog-card__title">ウミガメと泳ぐ</h2>
+                        <p class="blog-card__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
+                          ここにテキストが入ります。ここにテキストが入ります。ここにテキスト</p>
+                      </div>
                     </div>
-                  </div>
-                </a>
-              </li>
-              <li class="home__card blog-card">
-                <a href="#">
-                  <div class="blog-card__item">
-                    <figure class="blog-card__img">
-                      <img src="./assets/images/common/blog06.jpg" alt="イソギンチャクからひょっこり顔を出す色鮮やかなサカナの画像" loading="lazy">
-                    </figure>
-                    <div class="blog-card__body">
-                      <time datetime="2023-11-17" class="blog-card__date date">2023.11/17</time>
-                      <h2 class="blog-card__title">カクレクマノミ</h2>
-                      <p class="blog-card__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
-                        ここにテキストが入ります。ここにテキストが入ります。ここにテキスト</p>
+                  </a>
+                </li>
+                <li class="home__card blog-card">
+                  <a href="#">
+                    <div class="blog-card__item">
+                      <figure class="blog-card__img">
+                        <img src="./assets/images/common/blog06.jpg" alt="イソギンチャクからひょっこり顔を出す色鮮やかなサカナの画像" loading="lazy">
+                      </figure>
+                      <div class="blog-card__body">
+                        <time datetime="2023-11-17" class="blog-card__date date">2023.11/17</time>
+                        <h2 class="blog-card__title">カクレクマノミ</h2>
+                        <p class="blog-card__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
+                          ここにテキストが入ります。ここにテキストが入ります。ここにテキスト</p>
+                      </div>
                     </div>
-                  </div>
-                </a>
-              </li>
-              <li class="home__card blog-card">
-                <a href="#">
-                  <div class="blog-card__item">
-                    <figure class="blog-card__img">
-                      <img src="./assets/images/common/blog03.jpg" alt="イソギンチャクからひょっこり顔を出す色鮮やかなサカナの画像" loading="lazy">
-                    </figure>
-                    <div class="blog-card__body">
-                      <time datetime="2023-11-17" class="blog-card__date date">2023.11/17</time>
-                      <p class="blog-card__title">カクレクマノミ</p>
-                      <p class="blog-card__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
-                        ここにテキストが入ります。ここにテキストが入ります。ここにテキスト</p>
+                  </a>
+                </li>
+                <li class="home__card blog-card">
+                  <a href="#">
+                    <div class="blog-card__item">
+                      <figure class="blog-card__img">
+                        <img src="./assets/images/common/blog03.jpg" alt="イソギンチャクからひょっこり顔を出す色鮮やかなサカナの画像" loading="lazy">
+                      </figure>
+                      <div class="blog-card__body">
+                        <time datetime="2023-11-17" class="blog-card__date date">2023.11/17</time>
+                        <p class="blog-card__title">カクレクマノミ</p>
+                        <p class="blog-card__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
+                          ここにテキストが入ります。ここにテキストが入ります。ここにテキスト</p>
+                      </div>
                     </div>
-                  </div>
-                </a>
-              </li>
-              <li class="home__card blog-card">
-                <a href="#">
-                  <div class="blog-card__item">
-                    <figure class="blog-card__img">
-                      <img src="./assets/images/common/blog04.jpg" alt="海中の桜色のサンゴの画像" loading="lazy">
-                    </figure>
-                    <div class="blog-card__body">
-                      <time datetime="2023-11-17" class="blog-card__date date">2023.11/17</time>
-                      <h2 class="blog-card__title">ライセンス取得</h2>
-                      <p class="blog-card__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
-                        ここにテキストが入ります。ここにテキストが入ります。ここにテキスト</p>
+                  </a>
+                </li>
+                <li class="home__card blog-card">
+                  <a href="#">
+                    <div class="blog-card__item">
+                      <figure class="blog-card__img">
+                        <img src="./assets/images/common/blog04.jpg" alt="海中の桜色のサンゴの画像" loading="lazy">
+                      </figure>
+                      <div class="blog-card__body">
+                        <time datetime="2023-11-17" class="blog-card__date date">2023.11/17</time>
+                        <h2 class="blog-card__title">ライセンス取得</h2>
+                        <p class="blog-card__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
+                          ここにテキストが入ります。ここにテキストが入ります。ここにテキスト</p>
+                      </div>
                     </div>
-                  </div>
-                </a>
-              </li>
-              <li class="home__card blog-card">
-                <a href="#">
-                  <div class="blog-card__item">
-                    <figure class="blog-card__img">
-                      <img src="./assets/images/common/blog05.jpg" alt="海中を優雅に泳ぐウミガメの画像" loading="lazy">
-                    </figure>
-                    <div class="blog-card__body">
-                      <time datetime="2023-11-17" class="blog-card__date date">2023.11/17</time>
-                      <h2 class="blog-card__title">ウミガメと泳ぐ</h2>
-                      <p class="blog-card__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
-                        ここにテキストが入ります。ここにテキストが入ります。ここにテキスト</p>
+                  </a>
+                </li>
+                <li class="home__card blog-card">
+                  <a href="#">
+                    <div class="blog-card__item">
+                      <figure class="blog-card__img">
+                        <img src="./assets/images/common/blog05.jpg" alt="海中を優雅に泳ぐウミガメの画像" loading="lazy">
+                      </figure>
+                      <div class="blog-card__body">
+                        <time datetime="2023-11-17" class="blog-card__date date">2023.11/17</time>
+                        <h2 class="blog-card__title">ウミガメと泳ぐ</h2>
+                        <p class="blog-card__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
+                          ここにテキストが入ります。ここにテキストが入ります。ここにテキスト</p>
+                      </div>
                     </div>
-                  </div>
-                </a>
-              </li>
-              <li class="home__card blog-card">
-                <a href="#">
-                  <div class="blog-card__item">
-                    <figure class="blog-card__img">
-                      <img src="./assets/images/common/blog06.jpg" alt="イソギンチャクからひょっこり顔を出す色鮮やかなサカナの画像" loading="lazy">
-                    </figure>
-                    <div class="blog-card__body">
-                      <time datetime="2023-11-17" class="blog-card__date date">2023.11/17</time>
-                      <h2 class="blog-card__title">カクレクマノミ</h2>
-                      <p class="blog-card__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
-                        ここにテキストが入ります。ここにテキストが入ります。ここにテキスト</p>
+                  </a>
+                </li>
+                <li class="home__card blog-card">
+                  <a href="#">
+                    <div class="blog-card__item">
+                      <figure class="blog-card__img">
+                        <img src="./assets/images/common/blog06.jpg" alt="イソギンチャクからひょっこり顔を出す色鮮やかなサカナの画像" loading="lazy">
+                      </figure>
+                      <div class="blog-card__body">
+                        <time datetime="2023-11-17" class="blog-card__date date">2023.11/17</time>
+                        <h2 class="blog-card__title">カクレクマノミ</h2>
+                        <p class="blog-card__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
+                          ここにテキストが入ります。ここにテキストが入ります。ここにテキスト</p>
+                      </div>
                     </div>
-                  </div>
-                </a>
-              </li>
-            </ul>
+                  </a>
+                </li>
+              </ul>
+            </div>
             <div class="home__pagenavi pagenavi layout-pagenavi">
               <div class="pagenavi__inner">
                 <!-- WP-PageNaviで出力される部分 ここから -->
-                <div class="wp-pagenavi" role="navigation">
-                  <a class="previouspostslink" rel="prev" href="#"></a>
+                <div class="pagenavi__wp-pagenavi" role="navigation">
+                  <a class="pagenavi__previouspostslink" rel="prev" href="#"></a>
                   <div class="pagenavi__box">
                     <span class="current">1</span>
-                    <a class="page larger" href="#">2</a>
-                    <a class="page larger" href="#">3</a>
-                    <a class="page larger" href="#">4</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
                   </div>
-                  <a class="nextpostslink" rel="next" href="#"></a>
+                  <a class="pagenavi__nextpostslink" rel="next" href="#"></a>
                 </div>
                 <!-- WP-PageNaviで出力される部分 ここまで -->
               </div>
@@ -362,7 +365,7 @@
                   <ul class="sidebar-popular__list">
                     <li class="sidebar-popular__item">
                       <figure class="sidebar-popular__image">
-                        <img src="./assets/images/common/blog04.jpg" alt="" loading="lazy">
+                        <img src="./assets/images/common/blog04.jpg" alt="鮮やかな黄色のサカナの画像" loading="lazy">
                       </figure>
                       <div class="sidebar-popular__body">
                         <time datetime="2023-11-17" class="sidebar-popular__date date">2023.11/17</time>
@@ -371,7 +374,7 @@
                     </li>
                     <li class="sidebar-popular__item">
                       <figure class="sidebar-popular__image">
-                        <img src="./assets/images/common/blog02.jpg" alt="" loading="lazy">
+                        <img src="./assets/images/common/blog02.jpg" alt="優雅に泳ぐウミガメの画像" loading="lazy">
                       </figure>
                       <div class="sidebar-popular__body">
                         <time datetime="2023-11-17" class="sidebar-popular__date date">2023.11/17</time>
@@ -380,7 +383,7 @@
                     </li>
                     <li class="sidebar-popular__item">
                       <figure class="sidebar-popular__image">
-                        <img src="./assets/images/common/blog03.jpg" alt="" loading="lazy">
+                        <img src="./assets/images/common/blog03.jpg" alt="イソギンチャクに隠れるカクレクマノミの画像" loading="lazy">
                       </figure>
                       <div class="sidebar-popular__body">
                         <time datetime="2023-11-17" class="sidebar-popular__date date">2023.11/17</time>
@@ -395,7 +398,8 @@
                   </h2>
                   <div class="sidebar-review__content">
                     <figure class="sidebar-review__image">
-                      <img src="./assets/images/common/home-review.jpg" alt="" loading="lazy">
+                      <img src="./assets/images/common/home-review.jpg" alt="ソファに座ってこちらに笑みを浮かべているカップルの画像"
+                        loading="lazy">
                     </figure>
                     <div class="sidebar-review__body">
                       <p class="sidebar-review__age">30代(カップル)</p>
@@ -403,15 +407,15 @@
                     </div>
                   </div>
                   <div class="sidebar-review__button">
-                    <a href="#" class="button"><span>View&nbsp;more</span></a>
+                    <a href="archive-voice.html" class="button"><span>View&nbsp;more</span></a>
                   </div>
                 </div>
                 <div class="sidebar__campaign sidebar-campaign">
                   <h2 class="sidebar-campaign__title sidebar-title">
                     キャンペーン
                   </h2>
-                  <div class="sidebar-campaign__cards">
-                    <div class="sidebar-campaign__card campaign-card">
+                  <ul class="sidebar-campaign__cards">
+                    <li class="sidebar-campaign__card campaign-card">
                       <div class="campaign-card__item">
                         <figure class="campaign-card__img">
                           <img src="./assets/images/common/campaign01.jpg" alt="カラフルな魚群の画像" loading="lazy">
@@ -424,8 +428,8 @@
                           </p>
                         </div>
                       </div>
-                    </div>
-                    <div class="sidebar-campaign__card campaign-card">
+                    </li>
+                    <li class="sidebar-campaign__card campaign-card">
                       <div class="campaign-card__item">
                         <figure class="campaign-card__img">
                           <img src="./assets/images/common/campaign02.jpg" alt="エメラルドグリーンの浅瀬が広がる島の画像" loading="lazy">
@@ -438,10 +442,10 @@
                           </p>
                         </div>
                       </div>
-                    </div>
-                  </div>
+                    </li>
+                  </ul>
                   <div class="sidebar-campaign__button">
-                    <a href="#" class="button"><span>View&nbsp;more</span></a>
+                    <a href="page-campaign.html" class="button"><span>View&nbsp;more</span></a>
                   </div>
                 </div>
                 <div class="sidebar__archive sidebar-archive">
@@ -481,7 +485,7 @@
               </div>
             </div>
           </div>
-        
+
         </div>
       </div>
     </div>
@@ -548,7 +552,7 @@
         <nav class="footer__nav">
           <div class="footer__nav-items">
             <div class="footer__nav-container">
-              <div class="footer__nav-content">
+              <div class="footer__nav-content">  
                 <div class="footer__nav-block">
                   <div class="footer__nav-item footer__nav-item--main">
                     <a href="page-campaign.html">キャンペーン</a>

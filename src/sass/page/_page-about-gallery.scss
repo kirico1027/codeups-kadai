@@ -32,63 +32,24 @@
   }
 }
 
-.page-about-gallery__container img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.page-about-gallery__container img:nth-child(6n+1) {
-  aspect-ratio: 345/523;
-
-  @include mq(md) {
-    grid-column: span 1;
-    grid-row: span 2;
-  }
-}
-
-.page-about-gallery__container img:nth-child(6n+2) {
-  aspect-ratio: 345/219;
-
-  @include mq(md) {
-    grid-column: span 2;
-    grid-row: span 1;
-  }
-}
-
-.page-about-gallery__container img:nth-child(6n+3) {
-  aspect-ratio: 345/219;
-
-  @include mq(md) {
-    grid-column: span 2;
-    grid-row: span 1;
-  }
-}
-
-.page-about-gallery__container img:nth-child(6n+4) {
-  aspect-ratio: 345/219;
-
-  @include mq(md) {
-    grid-column: span 2;
-    grid-row: span 1;
-  }
-}
-
-.page-about-gallery__container img:nth-child(6n+5) {
-  aspect-ratio: 345/219;
-
-  @include mq(md) {
-    grid-column: span 2;
-    grid-row: span 1;
-  }
-}
-
+.page-about-gallery__container img:nth-child(6n+1),
 .page-about-gallery__container img:nth-child(6n+6) {
   aspect-ratio: 345/523;
 
   @include mq(md) {
     grid-column: span 1;
     grid-row: span 2;
+  }
+}
+
+.page-about-gallery__container img:nth-child(6n+2),
+.page-about-gallery__container img:nth-child(6n+3),
+.page-about-gallery__container img:nth-child(6n+4),
+.page-about-gallery__container img:nth-child(6n+5) {
+  aspect-ratio: 345/219;
+
+  @include mq(md) {
+    grid-column: span 2;
+    grid-row: span 1;
   }
 }

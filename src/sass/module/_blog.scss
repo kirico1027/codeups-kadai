@@ -17,10 +17,11 @@
     background-image: url(../images/common/blog-bg.jpg);
     background-size: cover;
     width: 100%;
-    height: rem(500);
     top: 0;
     left: 0;
     z-index: -1;
+    aspect-ratio: 1440/500;
+    height: auto;;
   }
 }
 

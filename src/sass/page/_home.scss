@@ -32,10 +32,15 @@
 }
 
 .home__main {
+  @include mq(md) {
+    flex: 1;
+  }
+}
+
+.home__main-inner {
   padding: 0 rem(6);
 
   @include mq(md) {
-    flex: 1;
     padding: 0;
   }
 }

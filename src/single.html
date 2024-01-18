@@ -11,12 +11,12 @@
   <meta name="description" content="ここに説明文が入ります。">
   <meta name="keywords" content="CodeUps">
   <!-- ogp -->
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
+  <meta property="og:title" content="ブログ詳細 | CodeUps">
+  <meta property="og:type" content="website">
   <meta property="og:url" content="">
   <meta property="og:image" content="">
-  <meta property="og:site_name" content="">
-  <meta property="og:description" content="">
+  <meta property="og:site_name" content="ブログ詳細 | CodeUps">
+  <meta property="og:description" content="ここに説明文が入ります。">
   <!-- ファビコン -->
   <link rel="”icon”" href="">
   <!-- google fonts -->
@@ -38,11 +38,11 @@
 <body>
   <header class="header js-header">
     <div class="header__inner">
-      <h1 class="header__logo">
+      <div class="header__logo">
         <a href="index.html">
           <img src="./assets/images/common/logo.svg" alt="CodeUps">
         </a>
-      </h1>
+      </div>
       <nav class="header__nav">
         <ul class="header__nav-items">
           <li class="header__nav-item">
@@ -158,7 +158,7 @@
 
     <section class="sub-mv sub-mv--blog">
       <div class="sub-mv__inner">
-        <h2 class="sub-mv__title">Blog</h2>
+        <h1 class="sub-mv__title">Blog</h1>
       </div>
     </section>
 
@@ -166,7 +166,7 @@
       <div class="breadcrumb__inner inner">
         <!-- Breadcrumb NavXTで出力される部分 ここから -->
         <span class="breadcrumb__home">
-          <a href="#">
+          <a href="index.html">
             <span>TOP</span>
           </a>
         </span>
@@ -179,37 +179,43 @@
     <div class="single layout-single">
       <div class="single__inner inner">
         <div class="single__container">
-          <div class="single__main">
-            <div class="single__box">
-              <div class="single__body">
-                <time datetime="2023-11-17" class="single__date">2023.11/17</time>
-                <h2 class="single__title">ライセンス取得</h2>
-                <div class="single__thumbnail">
-                  <img src="./assets/images/common/single01.jpg" alt="">
+          <div class="single__main single-main">
+            <div class="single-main__box">
+              <div class="single-main__body">
+                <time datetime="2023-11-17" class="single-main__date">2023.11/17</time>
+                <h2 class="single-main__title">ライセンス取得</h2>
+                <div class="single-main__thumbnail">
+                  <img src="./assets/images/common/single01.jpg" alt="海中に漂う桜色のサンゴの画像" loading="lazy">
                 </div>
               </div>
-              <div class="single__content single-content">
-                <p>ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</p>
+              <div class="single-main__content single-content">
+                <p>
+                  ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+                </p>
                 <div>
-                  <img src="./assets/images/common/single01.jpg" alt="">
+                  <img src="./assets/images/common/single01.jpg" alt="海中に漂う桜色のサンゴの画像" loading="lazy">
                 </div>
-                <p>ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</p>
+                <p>
+                  ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+                </p>
                 <ul>
                   <li><span>リスト１</span></li>
                   <li><span>リスト２</span></li>
                   <li><span>リスト３</span></li>
                 </ul>
-                <p>ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</p>
+                <p>
+                  ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+                </p>
               </div>
 
             </div>
-            <div class="single__pagenavi pagenavi layout-pagenavi">
+            <div class="single-main__pagenavi pagenavi layout-pagenavi--single">
               <div class="pagenavi__inner">
                 <!-- WP-PageNaviで出力される部分 ここから -->
-                <div class="wp-pagenavi" role="navigation">
-                  <a class="previouspostslink" rel="prev" href="#"></a>
+                <div class="pagenavi__wp-pagenavi pagenavi__wp-pagenavi--single" role="navigation">
+                  <a class="pagenavi__previouspostslink" rel="prev" href="#"></a>
 
-                  <a class="nextpostslink" rel="next" href="#"></a>
+                  <a class="pagenavi__nextpostslink" rel="next" href="#"></a>
                 </div>
                 <!-- WP-PageNaviで出力される部分 ここまで -->
               </div>

@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.page-about-lead__content {
+.page-about-lead__content-sp {
   position: relative;
 
   @include mq(md) {
@@ -8,7 +8,7 @@
   }
 }
 
-.page-about-lead__content::before,
+.page-about-lead__content-sp::before,
 .page-about-lead__content-sub::before{
   content: '';
   position: absolute;
@@ -29,7 +29,7 @@
   }
 }
 
-.page-about-lead__content-sub {
+.page-about-lead__content-pc {
   display: none;
 
   @include mq(md) {
@@ -38,8 +38,8 @@
   }
 }
 
-.page-about-lead__image-left {
-  display: none;
+.page-about-lead__image {
+  position: relative;
 }
 
 .page-about-lead__image-right img {
@@ -55,14 +55,18 @@
   line-height: 1.02;
   color: $white;
   position: absolute;
-  top: 7%;
+  top: 10%;
   left: 6%;
 }
 
-.about-main-image__text {
+.page-about-lead__box {
+  margin-top: rem(14.5);
+}
+
+.page-about-lead__text {
   font-family: $base-font-family;
   font-size: rem(16);
   font-weight: $regular;
-  line-height: calc(24/16);
+  line-height: calc(24 / 16);
   color: $title-color;
 }

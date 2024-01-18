@@ -156,4 +156,51 @@ jQuery(function ($) {
   });
 });
 
+// バリデーション
+$(document).ready(function () {
+  $("#js-form").validate({
+    rules: {
+      name: {
+        required: true,
+      },
+      mail: {
+        required: true,
+        email: true,
+      },
+      tel: {
+        required: true,
+      },
+      "course": {
+        required: true,
+      },
+      message: {
+        required: true,
+      },
+      "agree": {
+        required: true,
+      },
+    },
+    errorPlacement: function (error, element) {
+      if (error.text() !== "") {
+        if ($("#form__error").length == 0) {
+          // エラーメッセージが存在しない場合、挿入
+          $("<p id='form__error'></p>").html("※必須項目が入力されていません。入力してください。").insertBefore($(".form__list .form__item:first-child"));
+        } else {
+          // エラーメッセージが既に存在する場合、更新
+          $("#form__error").html("※必須項目が入力されていません。入力してください.").show();
+        }
+      } else {
+        // エラーメッセージが空の場合、非表示にする
+        $("#form__error").empty().hide();
+      }
+    },
+    submitHandler: function (form) {
+      // フォームがバリデーションを通過した場合の処理を記述
+      // 例えば、フォームを送信するなど
+      form.submit();
+    },
+  });
+});
+
+
 });

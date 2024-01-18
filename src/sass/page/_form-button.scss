@@ -1,9 +1,9 @@
 @use "global" as *;
 
-.form-submit {
+.form-button {
   display: inline-block;
   width: 202px;
-  padding: 15px 0 14px 50px;
+  padding: 15px 0 14px 55px;
   font-size: 14px;
   font-family: $second-font-family;
   font-weight: $regular;
@@ -19,7 +19,7 @@
   z-index: 1;
 }
 
-.form-submit::before {
+.form-button::before {
   position: absolute;
   content: "";
   display: inline-block;
@@ -31,7 +31,7 @@
   z-index: -1;
 }
 
-.form-submit::after {
+.form-button::after {
   background: $white;
   position: absolute;
   display: inline-block;
@@ -46,22 +46,22 @@
   z-index: -1;
 }
 
-.form-submit:hover {
+.form-button:hover {
   color: $accent-color;
   opacity: 1;
 }
 
-.form-submit:hover::after {
+.form-button:hover::after {
   transform: scale(1, 1);
   opacity: 1;
 }
 
-.form-submit span {
+.form-button span {
   position: relative;
   display: inline-block;
 }
 
-.form-submit span::before {
+.form-button span::before {
   display: block;
   width: 10px;
   height: 1px;
@@ -70,13 +70,13 @@
   content: "";
   top: calc(50% - 2.2px);
   transform: translateY(-50%);
-  right: calc(50% - 75px);
+  right: calc(50% - 69.5px);
   transform: rotate(40deg);
   border-radius: 4px;
   z-index: 1;
 }
 
-.form-submit span::after {
+.form-button span::after {
   display: block;
   width: rem(40);
   height: 1px;
@@ -89,16 +89,16 @@
   border-radius: 4px;
 }
 
-.form-submit:hover span::before,
-.form-submit:hover span::after {
+.form-button:hover span::before,
+.form-button:hover span::after {
   background: $accent-color;
 }
 
-.form-submit input {
+.form-button input {
   color: $white;
 }
 
-.form-submit:hover input {
+.form-button:hover input {
   color: $accent-color
 }
 

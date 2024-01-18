@@ -11,12 +11,12 @@
   <meta name="description" content="ここに説明文が入ります。">
   <meta name="keywords" content="CodeUps">
   <!-- ogp -->
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
+  <meta property="og:title" content="よくある質問 | CodeUps">
+  <meta property="og:type" content="website">
   <meta property="og:url" content="">
   <meta property="og:image" content="">
-  <meta property="og:site_name" content="">
-  <meta property="og:description" content="">
+  <meta property="og:site_name" content="よくある質問 | CodeUps">
+  <meta property="og:description" content="ここに説明文が入ります。">
   <!-- ファビコン -->
   <link rel="”icon”" href="">
   <!-- google fonts -->
@@ -30,6 +30,7 @@
   <link rel="stylesheet" href="./assets/css/style.css">
   <!-- JavaScript -->
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
   <script defer src="./assets/js/jquery.inview.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@7/swiper-bundle.min.js"></script>
   <script defer src="./assets/js/script.js"></script>
@@ -38,11 +39,11 @@
 <body>
   <header class="header js-header">
     <div class="header__inner">
-      <h1 class="header__logo">
+      <div class="header__logo">
         <a href="index.html">
           <img src="./assets/images/common/logo.svg" alt="CodeUps">
         </a>
-      </h1>
+      </div>
       <nav class="header__nav">
         <ul class="header__nav-items">
           <li class="header__nav-item">
@@ -158,7 +159,7 @@
 
     <section class="sub-mv sub-mv--contact">
       <div class="sub-mv__inner">
-        <h2 class="sub-mv__title">Contact</h2>
+        <h1 class="sub-mv__title">Contact</h1>
       </div>
     </section>
 
@@ -166,7 +167,7 @@
       <div class="breadcrumb__inner inner">
         <!-- Breadcrumb NavXTで出力される部分 ここから -->
         <span class="breadcrumb__home">
-          <a href="#">
+          <a href="index.html">
             <span>TOP</span>
           </a>
         </span>
@@ -177,65 +178,64 @@
       </div>
     </div>
 
-    <section class="page-contact layout-page-contact">
+    <div class="page-contact layout-page-contact">
       <div class="page-contact__inner">
-        <form class="page-contact__form form" action="">
-          <dl class="form__wrap">
-            <dt class="form__label">お名前<span>必須</span></dt>
-            <dd class="form__input form-input">
-              <input type="text" placeholder="沖縄&emsp;太郎">
-            </dd>
-          </dl>
-          <dl class="form__wrap">
-            <dt class="form__label">メールアドレス<span>必須</span></dt>
-            <dd class="form__input form-input">
-              <input type="email" placeholder="aaa000@ggmail.com">
-            </dd>
-          </dl>
-          <dl class="form__wrap">
-            <dt class="form__label">電話番号<span>必須</span></dt>
-            <dd class="form__input form-input">
-              <input type="tel" placeholder="000-0000-0000">
-            </dd>
-          </dl>
-          <dl class="form__wrap">
-            <dt class="form__label">お問い合わせ項目<span>必須</span></dt>
-            <dd class="form__checkbox form-checkbox">
-              <label><input type="checkbox" name="course" value="ダイビング講習について"><span>ダイビング講習について</span></label>
-              <label><input type="checkbox" name="course" value="ファンデイビングについて"><span>ファンデイビングについて</span></label>
-              <label><input type="checkbox" name="course" value="体験ダイビングについて"><span>体験ダイビングについて</span></label>
-            </dd>
-          </dl>
-          <dl class="form__wrap">
-            <dt class="form__label">キャンペーン</dt>
-            <dd class="form__select form-select">
-              <select>
-                <option hidden>キャンペーン内容を選択</option>
-                <option value="ファンダイビング">ファンダイビング</option>
-                <option value="ライセンス講習">ライセンス講習</option>
-                <option value="体験ダイビング">体験ダイビング</option>
-              </select>
-            </dd>
-          </dl>
-          <dl class="form__wrap form__wrap--textarea">
-            <dt class="form__label">お問い合わせ内容<span>必須</span></dt>
-            <dd class="form__textarea form-textarea">
-              <textarea name="message"></textarea>
-            </dd>
-          </dl>
-          <div class="form__checkbox-agree form-agree">
-            <label for="agree"><input type="checkbox" id="agree"><span>個人情報の取り扱いについて同意のうえ送信します。</span></label>
-          </div>
-          <div class="form__submit-wrap">
-            <div class="form__submit form-submit">
-              <span>
-                <input type="submit" value="Send">
-              </span>
+        <form class="page-contact__form form" action="" id="js-form">
+
+          <div class="form__list">
+            <div class="form__item">
+              <label for="name" class="form__label">お名前<span>必須</span></label>
+              <input name="name" id="name" class="form__input" type="text" placeholder="沖縄&emsp;太郎" required>
             </div>
-        </div>
+            <div class="form__item">
+              <label for="mail" class="form__label">メールアドレス<span>必須</span></label>
+              <input name="mail" id="mail" class="form__input" type="email" placeholder="aaa000@ggmail.com" required>
+            </div>
+            <div class="form__item">
+              <label for="tel" class="form__label">電話番号<span>必須</span></label>
+              <input name="tel" id="tel" class="form__input" type="tel" placeholder="000-0000-0000" required>
+            </div>
+            <div class="form__item">
+              <div class="form__label">お問い合わせ項目<span>必須</span></div>
+              <div class="form__checkbox form-checkbox">
+                <label><input type="checkbox" name="course" value="ダイビング講習について"
+                    required><span>ダイビング講習について</span></label>
+                <label><input type="checkbox" name="course" value="ファンデイビングについて"
+                    required><span>ファンデイビングについて</span></label>
+                <label><input type="checkbox" name="course" value="体験ダイビングについて"
+                    required><span>体験ダイビングについて</span></label>
+              </div>
+            </div>
+            <div class="form__item">
+              <label for="type" class="form__label">キャンペーン</label>
+              <div class="form__select form-select">
+                <select id="type" name="type" required>
+                  <option value="" hidden>キャンペーン内容を選択</option>
+                  <option value="ファンダイビング">ファンダイビング</option>
+                  <option value="ライセンス講習">ライセンス講習</option>
+                  <option value="体験ダイビング">体験ダイビング</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form__item form__item--textarea">
+              <label for="contents" class="form__label">お問い合わせ内容<span>必須</span></label>
+              <textarea id="contents" class="form__textarea" name="message" required></textarea>
+            </div>
+            <div class="form__checkbox-agree form-agree">
+              <label>
+                <input name="agree" type="checkbox" required><span>個人情報の取り扱いについて同意のうえ送信します。</span>
+              </label>
+            </div>
+            <div class="form__submit-wrap">
+              <button class="form__submit-button form-button" type="submit">
+                <span>Send</span>
+              </button>
+            </div>
+          </div>
         </form>
       </div>
-    </section>
+    </div>
   </main>
 
   <footer class="footer layout-footer--page-contact">

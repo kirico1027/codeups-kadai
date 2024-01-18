@@ -1,88 +1,34 @@
 @use "global" as *;
 
+.page-campaign__inner {
+  width: 100%;
+  padding-right: $padding-sp;
+  padding-left: $padding-sp;
+  margin-inline: auto;
+  max-width: rem(655);
+
+  @include mq("md") {
+    max-width: $inner + strip-unit($padding-pc) * 2;
+    padding-right: $padding-pc;
+    padding-left: $padding-pc;
+  }
+}
+
 .page-campaign__cards {
   display: grid;
-  justify-content: center;
-  align-items: center;
   gap: rem(40) rem(40);
   margin-top: rem(40);
+  padding: 0 rem(32.5);
 
   @include mq(md) {
     grid-template-columns: repeat(2, 1fr);
     gap: rem(80) rem(40);
+    padding: 0;
   }
 }
 
-.page-campaign__cards .campaign-card {
-  width: clamp(rem(280), 74.666vw, rem(500));
-
-  @include mq(md) {
-    width: 100%;
-  }
-}
-
-.page-campaign__cards .campaign-card__img img {
-  @include mq(md) {
-    aspect-ratio: 520/347;
-  }
-}
-
-.page-campaign__cards .campaign-card__title-main {
-  @include mq(md) {
-  font-size:  rem(24);
-  }
-}
-
-.page-campaign__cards .campaign-card__text {
-  display: none;
-  font-family: $base-font-family;
-  font-size: rem(16);
-  font-weight: $regular;
-  letter-spacing: .0em;
-  line-height: calc(24/16);
-  color: $title-color;
-  margin-top: rem(24);
-
-  @include mq(md) {
-    display: block;
-  }
-}
-
-.page-campaign__cards .campaign-card__info {
-  display: none;
-  text-align: center;
-  color: $accent-color;
-  font-family: $base-font-family;
-  font-size:  rem(14);
-  font-weight: $regular;
-  line-height: calc(18/14);
-  margin-top: rem(30);
-
-  @include mq(md) {
-  display: block;
-  }
-}
-
-.page-campaign__cards .campaign-card__period {
-  font-family: $third-font-family;
-  font-size:  rem(16);
-  font-weight: $bold;
-  line-height: calc(18/16);
-  margin-bottom: rem(5);
-
-  @include mq(md) {
-  display: block;
-  }
-}
-
-.page-campaign__cards .campaign-card__button {
-  margin-top: rem(16);
-  text-align: center;
-  display: none;
-
-  @include mq(md) {
-    display: block;
-  }
+.page-campaign__pagenavi {
+  margin-top: rem(80);
 }
 
 .page-campaign__pagenavi .wp-pagenavi {

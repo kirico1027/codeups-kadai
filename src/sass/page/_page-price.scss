@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.page-price__lists {
+.page-price__list {
   display: flex;
   flex-direction: column;
   row-gap: rem(40);
@@ -11,7 +11,7 @@
   }
 }
 
-.page-price__lists::before {
+.page-price__list::before {
   content: '';
   position: absolute;
   width: calc((120 / 375) * 100vw);

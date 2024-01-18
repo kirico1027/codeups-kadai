@@ -11,12 +11,12 @@
   <meta name="description" content="ここに説明文が入ります。">
   <meta name="keywords" content="CodeUps">
   <!-- ogp -->
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
+  <meta property="og:title" content="404 | CodeUps">
+  <meta property="og:type" content="website">
   <meta property="og:url" content="">
   <meta property="og:image" content="">
-  <meta property="og:site_name" content="">
-  <meta property="og:description" content="">
+  <meta property="og:site_name" content="404 | CodeUps">
+  <meta property="og:description" content="ここに説明文が入ります。">
   <!-- ファビコン -->
   <link rel="”icon”" href="">
   <!-- google fonts -->
@@ -38,11 +38,11 @@
 <body>
   <header class="header js-header">
     <div class="header__inner">
-      <h1 class="header__logo">
+      <div class="header__logo">
         <a href="index.html">
           <img src="./assets/images/common/logo.svg" alt="CodeUps">
         </a>
-      </h1>
+      </div>
       <nav class="header__nav">
         <ul class="header__nav-items">
           <li class="header__nav-item">
@@ -161,7 +161,7 @@
         <div class="breadcrumb__inner inner">
           <!-- Breadcrumb NavXTで出力される部分 ここから -->
           <span class="breadcrumb__home">
-            <a href="#">
+            <a href="index.html">
               <span>TOP</span>
             </a>
           </span>
@@ -172,18 +172,13 @@
         </div>
       </div>
       <div class="page-404__inner inner">
-        <div class="page-404__container">
-          <picture class="page-404__image">
-            <source srcset="./assets/images/common/404-pc.png" media="(min-width: 768px)" type="image/jpg">
-            <img src="./assets/images/common/404.png" alt="" loading="lazy">
-          </picture>
-          <div class="page-404__box">
-            <p class="page-404__title">404</p>
-            <p class="page-404__text">申し訳ありません。<br>
-              お探しのページが見つかりません。</p>
-            <div class="page-404__button">
-              <a href="#" class="page-404-button"><span>Page&nbsp;TOP</span></a>
-            </div>
+        <div class="page-404__image"></div>
+        <div class="page-404__box">
+          <h1 class="page-404__title">404</h1>
+          <p class="page-404__text">申し訳ありません。<br>
+            お探しのページが見つかりません。</p>
+          <div class="page-404__button">
+            <a href="#" class="page-404-button"><span>Page&nbsp;TOP</span></a>
           </div>
         </div>
       </div>

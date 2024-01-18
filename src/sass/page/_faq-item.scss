@@ -1,15 +1,15 @@
 @use "global" as *;
 
-.faq-list__item {
+.faq-item {
   font-family: $base-font-family;
   font-weight: $regular;
 }
 
-.faq-list__item+.faq-list__item {
+.faq-item+.faq-item {
   margin-top: rem(40);
 }
 
-.faq-list__item-question {
+.faq-item__question {
   padding: rem(15.5) rem(50) rem(15.5) rem(16);
   position: relative;
   font-size: rem(16);
@@ -23,8 +23,8 @@
   }
 }
 
-.faq-list__item-question::before,
-.faq-list__item-question::after {
+.faq-item__question::before,
+.faq-item__question::after {
   content: "";
   position: absolute;
   position: absolute;
@@ -42,15 +42,15 @@
   }
 }
 
-.faq-list__item-question::after {
+.faq-item__question::after {
   transform: rotate(90deg);
 }
 
-.faq-list__item-question.is-open::after {
+.faq-item__question.is-open::after {
   transform: rotate(0deg);
 }
 
-.faq-list__item-answer {
+.faq-item__answer {
   padding: rem(24) rem(16);
   display: none;
   font-size: rem(16);

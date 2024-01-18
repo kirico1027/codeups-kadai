@@ -1,11 +1,17 @@
 @use "global" as *;
 
-.pagenavi .wp-pagenavi {
+.pagenavi__wp-pagenavi {
   clear: both;
   text-align: center;
   display: flex;
   justify-content: center;
+  column-gap: rem(40);
 }
+
+.pagenavi__wp-pagenavi--single {
+  column-gap: rem(82);
+}
+
 
 .pagenavi__box {
   display: flex;
@@ -13,8 +19,8 @@
   column-gap: rem(12);
 }
 
-.pagenavi .wp-pagenavi a,
-.pagenavi .wp-pagenavi span {
+.pagenavi__wp-pagenavi a,
+.pagenavi__wp-pagenavi span {
   display: inline-block;
   font-family: $third-font-family;
   padding: rem(10) 0;
@@ -30,34 +36,34 @@
   transition: .3s;
 }
 
-.pagenavi .wp-pagenavi a:hover,
-.previouspostslink:hover,
-.nextpostslink:hover {
+.pagenavi__wp-pagenavi a:hover,
+.pagenavi__previouspostslink:hover,
+.pagenavi__nextpostslink:hover {
   color: $white;
   background-color: $accent-color;
   border-color: $accent-color;
   opacity: 1;
 }
 
-.previouspostslink:hover::after,
-.nextpostslink:hover::after {
+.pagenavi__previouspostslink:hover::after,
+.pagenavi__nextpostslink:hover::after {
   border-right: rem(1) solid $white;
   border-bottom: rem(1) solid $white;
 }
 
-.pagenavi .wp-pagenavi .current {
+.pagenavi__wp-pagenavi .current {
   color: $white;
   background-color: $accent-color;
   border-color: $accent-color;
 }
 
-.previouspostslink,
-.nextpostslink {
+.pagenavi__previouspostslink,
+.pagenavi__nextpostslink {
   position: relative;
 }
 
-.previouspostslink::after,
-.nextpostslink::after {
+.pagenavi__previouspostslink::after,
+.pagenavi__nextpostslink::after {
   content: '';
   position: absolute;
   width: rem(10);
@@ -68,12 +74,12 @@
   top: 50%;
 }
 
-.previouspostslink::after {
+.pagenavi__previouspostslink::after {
   left: calc(50% + rem(2));
   transform: translate(-50%, -50%) rotate(135deg);
 }
 
-.nextpostslink::after {
+.pagenavi__nextpostslink::after {
   left: calc(50% - rem(2));
   transform: translate(-50%, -50%) rotate(-45deg);
 }

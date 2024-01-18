@@ -2,6 +2,26 @@
 
 .tab-content {
   padding: rem(24);
+  border: 1px solid $accent-color;
+}
+
+.tab-content__item {
+  display: none;
+}
+
+.tab-content__item.is-active {
+  display: block;
+  animation: fade 0.3s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 .tab-content__box {

@@ -1,0 +1,80 @@
+@use "global" as *;
+
+.tab-menu {
+  display: flex;
+  justify-content: space-between;
+  column-gap: rem(20);
+}
+
+.tab-menu__item {
+  display: inline-block;
+  font-family: $base-font-family;
+  font-size: rem(14);
+  font-weight: $regular;
+  line-height: 1.4;
+  background-color: #ddf0f1;
+  padding: rem(10) 0;
+  width: 100%;
+  color: $accent-color;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  cursor: pointer;
+
+  @include mq(md) {
+    max-width: rem(300);
+    font-size: rem(24);
+    padding: rem(28) 0 rem(28) rem(87);
+    text-align: inherit;
+  }
+}
+
+.tab-menu__item span {
+  position: relative;
+  display: inline-block;
+}
+
+.tab-menu__item span::before {
+  position: absolute;
+  content: "";
+  display: none;
+  top: 50%;
+  transform: translateY(-50%);
+  left: rem(-66);
+  background-size: contain;
+  width: rem(60);
+  height: rem(60);
+
+  @include mq(md) {
+    display: block;
+  }
+}
+
+.tab-menu__item:nth-child(1) span::before {
+  background-image: url("../images/common/tab-menu01.svg");
+}
+
+.tab-menu__item:nth-child(2) span::before {
+  background-image: url("../images/common/tab-menu02.svg");
+}
+
+.tab-menu__item:nth-child(3) span::before {
+  background-image: url("../images/common/tab-menu03.svg");
+}
+
+
+.tab-menu__item:nth-child(1).is-active span::before {
+  background-image: url("../images/common/tab-menu01-white.svg");
+}
+
+.tab-menu__item:nth-child(2).is-active span::before {
+  background-image: url("../images/common/tab-menu02-white.svg");
+}
+
+.tab-menu__item:nth-child(3).is-active span::before {
+  background-image: url("../images/common/tab-menu03-white.svg");
+}
+
+.tab-menu__item.is-active {
+  color: $white;
+  background-color: $accent-color;
+}

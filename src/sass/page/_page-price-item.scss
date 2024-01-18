@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.price-list {
+.page-price-item {
   font-family: $base-font-family;
   border: 1px solid $accent-color;
 
@@ -9,7 +9,7 @@
   }
 }
 
-.price-list__head {
+.page-price-item__title {
   padding-left: rem(17);
   font-size: rem(16);
   font-weight: $bold;
@@ -29,11 +29,11 @@
   }
 }
 
-.price-list__head span {
+.page-price-item__title span {
   position: relative;
 }
 
-.price-list__head span::before {
+.page-price-item__title span::before {
   position: absolute;
   content: "";
   top: 50%;
@@ -54,23 +54,23 @@
   }
 }
 
-.price-list__content {
+.page-price-item__content {
   background-color: $white;
   @include mq(md) {
     flex: 1;
   }
 }
 
-.price-list__body {
+.page-price-item__body {
   display: flex;
 }
 
-.price-list__body:not(:last-child) {
+.page-price-item__body:not(:last-child) {
   border-bottom: 1px solid $accent-color;
 }
 
-.price-list__body:nth-child(1) .price-list__title,
-.price-list__body:nth-child(1) .price-list__price {
+.page-price-item__body:nth-child(1) .page-price-item__course,
+.page-price-item__body:nth-child(1) .page-price-item__price {
   height: rem(63);
 
   @include mq(md) {
@@ -78,8 +78,8 @@
   }
 }
 
-.price-list__title,
-.price-list__price {
+.page-price-item__course,
+.page-price-item__price {
   font-size: rem(16);
   line-height: calc(24/16);
   font-weight: $regular;
@@ -89,7 +89,7 @@
   align-items: center;
 }
 
-.price-list__title {
+.page-price-item__course {
   width: 69.5%;
   justify-content: center;
   text-align: center;
@@ -101,7 +101,7 @@
   }
 }
 
-.price-list__price {
+.page-price-item__price {
   width: 30.5%;
   justify-content: right;
   padding-right: rem(16);

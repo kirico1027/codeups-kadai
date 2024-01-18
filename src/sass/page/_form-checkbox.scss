@@ -1,7 +1,9 @@
 @use "global" as *;
 
 .form-checkbox label {
-  display: block;
+  display: flex;
+  align-items:first baseline;
+  column-gap: rem(10);
 }
 
 .form-checkbox label:not(:first-of-type) {
@@ -12,45 +14,39 @@
   }
 }
 
-.form-checkbox input+span {
-  cursor: pointer;
-  display: inline-block;
-  padding-left: rem(25);
-  position: relative;
+.form-checkbox span {
   font-size: rem(16);
   font-weight: $regular;
   line-height: 1;
   color: $title-color;
 }
 
-.form-checkbox input+span::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-  background: #fff;
+.form-checkbox input[type="checkbox"] {
+  cursor: pointer;
+  background: $white;
   border: 1px solid $accent-color;
   display: block;
   width: rem(14);
   height: rem(14);
+  position: relative;
 }
 
-.form-checkbox input+span::after {
+.form-checkbox input[type="checkbox"]::after {
   content: "";
   position: absolute;
   top: calc(50% - rem(1));
-  left: rem(3);
+  left: rem(1.5);
   transform: translateY(-50%) rotate(-45deg);
   display: block;
   width: rem(9);
   height: rem(5);
-  border-bottom: 2px solid #c94800;
-  border-left: 2px solid #c94800;
+  border-bottom: 2px solid $point-color;
+  border-left: 2px solid $point-color;
   transition: 0.3s;
   opacity: 0;
 }
 
-.form-checkbox input:checked+span::after {
+.form-checkbox input[type="checkbox"]:checked:after {
   opacity: 1;
 }
+

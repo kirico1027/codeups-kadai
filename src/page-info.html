@@ -11,12 +11,12 @@
   <meta name="description" content="ここに説明文が入ります。">
   <meta name="keywords" content="CodeUps">
   <!-- ogp -->
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
+  <meta property="og:title" content="ダイビング情報 | CodeUps">
+  <meta property="og:type" content="website">
   <meta property="og:url" content="">
   <meta property="og:image" content="">
-  <meta property="og:site_name" content="">
-  <meta property="og:description" content="">
+  <meta property="og:site_name" content="ダイビング情報 | CodeUps">
+  <meta property="og:description" content="ここに説明文が入ります。">
   <!-- ファビコン -->
   <link rel="”icon”" href="">
   <!-- google fonts -->
@@ -38,11 +38,11 @@
 <body>
   <header class="header js-header">
     <div class="header__inner">
-      <h1 class="header__logo">
+      <div class="header__logo">
         <a href="index.html">
           <img src="./assets/images/common/logo.svg" alt="CodeUps">
         </a>
-      </h1>
+      </div>
       <nav class="header__nav">
         <ul class="header__nav-items">
           <li class="header__nav-item">
@@ -158,7 +158,7 @@
 
     <section class="sub-mv sub-mv--info">
       <div class="sub-mv__inner">
-        <h2 class="sub-mv__title">Information</h2>
+        <h1 class="sub-mv__title">Information</h1>
       </div>
     </section>
 
@@ -166,7 +166,7 @@
       <div class="breadcrumb__inner inner">
         <!-- Breadcrumb NavXTで出力される部分 ここから -->
         <span class="breadcrumb__home">
-          <a href="#">
+          <a href="index.html">
             <span>TOP</span>
           </a>
         </span>
@@ -180,13 +180,14 @@
     <section class="page-info layout-page-info">
       <div class="page-info__inner inner">
         <div class="page-info__tab tab">
-          <ul class="tab__menu">
-            <li class="tab__menu-item js-tab-menu is-active" data-number="tab01"><span>ライセンス<br class="u-mobile">講習</span></li>
-            <li class="tab__menu-item js-tab-menu" data-number="tab02"><span>ファン<br class="u-mobile">ダイビング</span></li>
-            <li class="tab__menu-item js-tab-menu" data-number="tab03"><span>体験<br class="u-mobile">ダイビング</span></li>
+          <ul class="tab__menu tab-menu">
+            <li class="tab-menu__item js-tab-menu is-active" data-number="tab01"><span>ライセンス<br
+                  class="u-mobile">講習</span></li>
+            <li class="tab-menu__item js-tab-menu" data-number="tab02"><span>ファン<br class="u-mobile">ダイビング</span></li>
+            <li class="tab-menu__item js-tab-menu" data-number="tab03"><span>体験<br class="u-mobile">ダイビング</span></li>
           </ul>
-          <ul class="tab__content">
-            <li id="tab01" class="tab__content-item tab-content js-tab-content is-active">
+          <ul class="tab__content tab-content">
+            <li id="tab01" class="tab-content__item js-tab-content is-active">
               <div class="tab-content__box">
                 <div class="tab-content__body">
                   <h2 class="tab-content__title">ライセンス講習</h2>
@@ -195,11 +196,11 @@
                   </p>
                 </div>
                 <figure class="tab-content__image">
-                  <img src="./assets/images/common/page-info01.jpg" alt="">
+                  <img src="./assets/images/common/page-info01.jpg" alt="エメラルドグリーンの海に浮かぶ5人のダイバーたちの画像" loading="lazy">
                 </figure>
               </div>
             </li>
-            <li id="tab02" class="tab__content-item tab-content js-tab-content">
+            <li id="tab02" class="tab-content__item js-tab-content">
               <div class="tab-content__box">
                 <div class="tab-content__body">
                   <h2 class="tab-content__title">ファンダイビング</h2>
@@ -208,11 +209,11 @@
                   </p>
                 </div>
                 <figure class="tab-content__image">
-                  <img src="./assets/images/common/page-info02.jpg" alt="">
+                  <img src="./assets/images/common/page-info02.jpg" alt="海底の巨大なサンゴの上を泳ぐ無数のサカナの画像" loading="lazy">
                 </figure>
               </div>
             </li>
-            <li id="tab03" class="tab__content-item tab-content js-tab-content">
+            <li id="tab03" class="tab-content__item js-tab-content">
               <div class="tab-content__box">
                 <div class="tab-content__body">
                   <h2 class="tab-content__title">体験ダイビング</h2>
@@ -221,7 +222,7 @@
                   </p>
                 </div>
                 <figure class="tab-content__image">
-                  <img src="./assets/images/common/page-info03.jpg" alt="">
+                  <img src="./assets/images/common/page-info03.jpg" alt="海底を泳ぐ鮮やかな黄色のサカナの画像" loading="lazy">
                 </figure>
               </div>
             </li>
