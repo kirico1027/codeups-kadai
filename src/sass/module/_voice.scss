@@ -39,7 +39,7 @@
   background-repeat: no-repeat;
   background-size: contain;
   right: calc(50% - min(48vw, rem(540)));
-  bottom: rem(-207);
+  bottom: rem(-205);
 
   @include mq(md) {
     display: block;

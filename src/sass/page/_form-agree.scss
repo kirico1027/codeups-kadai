@@ -2,8 +2,12 @@
 
 .form-agree label {
   display: flex;
-  align-items:first baseline;
-  column-gap: rem(8);
+  align-items:flex-start;
+  column-gap: rem(7.3);
+
+  @include mq(md) {
+  column-gap: rem(18);
+  }
 }
 
 .form-agree input[type="checkbox"] {
@@ -23,8 +27,8 @@
   line-height: calc(22/14);
   color: $font-color;
   cursor: pointer;
-  display: block;
   flex: 1;
+  display: block;
 }
 
 .form-agree input[type="checkbox"]::after {

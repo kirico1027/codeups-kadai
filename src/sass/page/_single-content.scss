@@ -9,7 +9,7 @@
   margin-top: rem(24);
 
   @include mq(md) {
-  margin-top: rem(40);
+  margin-top: rem(39);
   }
 }
 
@@ -28,7 +28,7 @@
 }
 
 .single-content ul {
-  margin-top: rem(24);
+  margin-top: rem(23);
   padding-left: rem(26);
 
   @include mq(md) {
@@ -40,7 +40,7 @@
   font-family: $base-font-family;
   font-size: rem(16);
   font-weight: $regular;
-  line-height: calc(26/16);
+  line-height: 1.7;
   color: $font-color;
   position: relative;
   display: inline-block;

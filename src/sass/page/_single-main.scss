@@ -6,6 +6,10 @@
   font-weight: $regular;
   line-height: calc(18/14);
   color: $title-color;
+
+  @include mq(md) {
+  
+  }
 }
 
 .single-main__title {
@@ -14,11 +18,12 @@
   font-weight: $medium;
   line-height: 1;
   color: $title-color;
-  margin-top: rem(18);
+  margin-top: rem(13);
   padding-bottom: rem(8);
   border-bottom: 1px solid $accent-color;
 
   @include mq(md) {
+    padding-bottom: rem(7);
   font-size:  rem(32);
   margin-top: rem(15);
   }

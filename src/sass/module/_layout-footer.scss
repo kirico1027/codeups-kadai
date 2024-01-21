@@ -9,15 +9,15 @@
 }
 
 .layout-footer--page-contact {
-  margin-top: rem(144);
+  margin-top: rem(148);
 
   @include mq(md) {
-  margin-top: rem(160);
+  margin-top: rem(164);
   }
 }
 
 .layout-footer--page-complete {
-  margin-top: rem(144);
+  margin-top: rem(142);
 
   @include mq(md) {
   margin-top: rem(120);

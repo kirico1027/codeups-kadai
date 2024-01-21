@@ -5,12 +5,12 @@
   border: 1px solid $accent-color;
 
   @include mq(md) {
-  display: flex;
+    display: flex;
   }
 }
 
 .page-price-item__title {
-  padding-left: rem(17);
+  padding-left: rem(30);
   font-size: rem(16);
   font-weight: $bold;
   color: $white;
@@ -25,7 +25,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-bottom: rem(53);
+    padding-bottom: rem(70);
   }
 }
 
@@ -38,24 +38,25 @@
   content: "";
   top: 50%;
   transform: translateY(-50%);
-  left: rem(-34);
+  left: rem(-32);
   background-size: contain;
   width: rem(24);
   height: rem(24);
   background-image: url("../images/common/tab-menu01-white.svg");
 
   @include mq(md) {
-  left: 50%;
-  transform: translateX(-50%);
-  top: rem(32);
-  width: rem(61);
-  height: rem(55);
-  background-repeat: no-repeat;
+    left: 50%;
+    transform: translateX(-50%);
+    top: rem(32);
+    width: rem(65);
+    height: rem(65);
+    background-repeat: no-repeat;
   }
 }
 
 .page-price-item__content {
   background-color: $white;
+
   @include mq(md) {
     flex: 1;
   }
@@ -71,11 +72,8 @@
 
 .page-price-item__body:nth-child(1) .page-price-item__course,
 .page-price-item__body:nth-child(1) .page-price-item__price {
-  height: rem(63);
-
-  @include mq(md) {
-    height: rem(59);
-  }
+  height: rem(61);
+  ;
 }
 
 .page-price-item__course,
@@ -83,26 +81,30 @@
   font-size: rem(16);
   line-height: calc(24/16);
   font-weight: $regular;
-  height: rem(59);
-  
   display: flex;
   align-items: center;
+  height: rem(58.5);
+
+  @include mq(md) {
+    height: rem(57.5);
+  }
 }
 
 .page-price-item__course {
-  width: 69.5%;
+  width: 69.6%;
   justify-content: center;
   text-align: center;
   border-right: 1px solid $accent-color;
 
   @include mq(md) {
+    width: 68%;
     justify-content: left;
     padding-left: rem(16);
   }
 }
 
 .page-price-item__price {
-  width: 30.5%;
   justify-content: right;
   padding-right: rem(16);
+  flex: 1;
 }

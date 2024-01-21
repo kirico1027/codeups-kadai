@@ -17,14 +17,23 @@
   font-weight: $regular;
   line-height: calc(32/16);
   color: $title-color;
-  margin-top: rem(40);
+  margin-top: rem(45);
+
+  @include mq(md) {
+    margin-top: rem(47);
+  }
 }
 
 .policy__box {
-  margin-top: rem(40);
+  margin-top: rem(32);
 }
 
 .policy__list {
   list-style-type: decimal;
   margin-left: rem(22);
 }
+
+.policy__item {
+padding-left: rem(1);
+}
+

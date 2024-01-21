@@ -40,10 +40,10 @@
 }
 
 .single__sidebar {
-  margin-top: rem(80);
+  margin-top: rem(78);
 
   @include mq(md) {
-    margin-top: 0;
+    margin-top: rem(5);
     width: 27.24%;
   }
 }

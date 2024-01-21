@@ -3,9 +3,11 @@
 .page-404 {
   background-color: $accent-color;
   padding-top: rem(80);
+  padding-bottom: rem(15);
 
   @include mq(md) {
   padding-top: rem(90);
+  padding-bottom: rem(0);
   }
 }
 
@@ -37,7 +39,7 @@
   transform: translate(-50%, -50%);
 
   @include mq(md) {
-    top: calc(50% + rem(5));
+    top: calc(50% + rem(8));
   }
 }
 
@@ -51,6 +53,7 @@
 
   @include mq(md) {
   font-size:  rem(160);
+  text-indent: 0.5em;
   }
 }
 
@@ -60,10 +63,11 @@
   line-height: calc(24/16);
   text-align: center;
   margin-top: rem(2);
-  letter-spacing: 0.05em;
+  letter-spacing: 0.01em;
 
   @include mq(md) {
-    margin-top: rem(35);
+    margin-top: rem(40);
+    text-indent: 0.01em;
   }
 }
 

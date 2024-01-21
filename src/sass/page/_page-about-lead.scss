@@ -9,7 +9,7 @@
 }
 
 .page-about-lead__content-sp::before,
-.page-about-lead__content-sub::before{
+.page-about-lead__content-pc::before{
   content: '';
   position: absolute;
   width: calc((120 / 375) * 100vw);
@@ -18,8 +18,8 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  left: calc(50% - min(46.5vw, rem(630)));
-  top: rem(-25);
+  left: calc(50% - min(46vw, rem(630)));
+  top: rem(-24);
 
   @include mq(md) {
     width: rem(301);
@@ -55,12 +55,12 @@
   line-height: 1.02;
   color: $white;
   position: absolute;
-  top: 10%;
-  left: 6%;
+  top: 10.5%;
+  left: 7%;
 }
 
 .page-about-lead__box {
-  margin-top: rem(14.5);
+  margin-top: rem(40);
 }
 
 .page-about-lead__text {

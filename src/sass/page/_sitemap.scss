@@ -1,14 +1,12 @@
 @use "global" as *;
 
 .sitemap-nav {
-  padding-left: rem(11);
+  padding-left: rem(23);
   margin: auto;
 
   @include mq(md) {
     width: 100%;
-    margin-top: rem(20.5);
     padding-left: rem(22);
-    padding-right: rem(65);
   }
 }
 
@@ -36,13 +34,13 @@
 
 .sitemap-nav__content+.sitemap-nav__content {
   @include mq(md) {
-    margin-left: rem(125);
+    margin-left: min(10.416vw,rem(150));
   }
 }
 
 .sitemap-nav__content--second+.sitemap-nav__content--second {
   @include mq(md) {
-    margin-left: rem(110);
+    margin-left: min(9.395vw,rem(135));
   }
 }
 
@@ -59,11 +57,11 @@
 .sitemap-nav__items {
   display: flex;
   justify-content: center;
-  column-gap: calc(40 /375 * 100vw);
+  column-gap: calc(50 /375 * 100vw);
 
   @include mq(md) {
     justify-content: flex-start;
-    column-gap: rem(110);
+    column-gap: min(9.236vw,rem(133));
   }
 }
 

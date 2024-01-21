@@ -78,7 +78,7 @@
   margin-top: rem(14.5);
 
   @include mq(md) {
-    margin-top: 0;
+    margin-top: rem(0);
   }
 }
 

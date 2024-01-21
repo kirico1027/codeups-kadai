@@ -6,7 +6,7 @@
   font-size:  rem(24);
   font-weight: $regular;
   line-height: 1;
-  padding: 13px 0 13px 70px;
+  padding: 15px 0 13px 81px;
 }
 
 .sidebar-title::before {
@@ -25,9 +25,9 @@
   content: "";
   top: 50%;
   transform: translateY(-50%);
-  left: rem(18);
+  left: rem(25);
   background-size: contain;
-  width: rem(45);
-  height: rem(45);
+  width: rem(50);
+  height: rem(50);
   background-image: url("../images/common/home-article-title.svg");
 }
