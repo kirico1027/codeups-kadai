@@ -57,7 +57,7 @@ jQuery(function ($) {
   jQuery(function ($) {
     var campaign_swiper = new Swiper(".js-campaign-swiper", {
       loop: true,
-      speed: 180000000000000000000000000000000000,
+      speed: 1800,
       slidesPerView: "auto",
       spaceBetween: 24,
       autoplay: {
@@ -196,7 +196,6 @@ $(document).ready(function () {
     },
     submitHandler: function (form) {
       // フォームがバリデーションを通過した場合の処理を記述
-      // 例えば、フォームを送信するなど
       form.submit();
     },
   });
