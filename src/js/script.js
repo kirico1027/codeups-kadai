@@ -135,7 +135,7 @@ jQuery(function ($) {
   });
 });
 
-
+// アーカイブ
 $(function () {
   $(".js-accordion__box .js-accordion__month").css(
     "display",
