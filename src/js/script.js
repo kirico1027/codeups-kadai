@@ -113,7 +113,7 @@ jQuery(function ($) {
 
   // モーダル
   $(function ()
-	{$(".page-about-gallery__container img").click(function() {
+	{$(".page-about-gallery__image img").click(function() {
     $(".modal-image").html($(this).prop('outerHTML'));
     $(".modal-image").fadeIn(500);
     $("body").addClass("is-noscroll");
@@ -124,16 +124,8 @@ jQuery(function ($) {
   });
 });
 
-// タブ
-jQuery(function ($) {
-  $('.js-tab-menu').on('click', function () {
-      $('.js-tab-menu').removeClass('is-active');
-      $('.js-tab-content').removeClass('is-active');
-      $(this).addClass('is-active');
-      var number = $(this).data("number");
-      $('#' + number).addClass('is-active');
-  });
-});
+
+
 
 // アーカイブ
 $(function () {
@@ -200,5 +192,46 @@ $(document).ready(function () {
     },
   });
 });
+
+
+// タブメニューのクリック時の処理（jQuery）
+$('.js-tab-menu').on('click', function () {
+  const number = $(this).data('number');
+
+  // タブメニューのクラスを切り替える
+  $('.js-tab-menu').removeClass('is-active');
+  $(this).addClass('is-active');
+
+  // タブコンテンツのクラスを切り替える
+  $('.js-tab-content').removeClass('is-active');
+  $('#' + number).addClass('is-active');
+});
+
+// URLから 'tab' パラメータの値を取得
+const url = new URL(window.location.href);
+const tab = url.searchParams.get('tab');
+
+// タブメニューとコンテンツのクラスを設定
+const tabMenus = document.querySelectorAll('.js-tab-menu');
+const tabContents = document.querySelectorAll('.js-tab-content');
+
+// 'tab' パラメータが null または未定義の場合、デフォルトで最初のタブをアクティブにする
+if (!tab) {
+  const firstTabMenu = tabMenus[0];
+  const firstTabContent = tabContents[0];
+
+  firstTabMenu.classList.add('is-active');
+  firstTabContent.classList.add('is-active');
+} else {
+  tabMenus.forEach(element => {
+    const number = element.getAttribute('data-number');
+    element.classList.toggle('is-active', number === tab);
+  });
+
+  tabContents.forEach(content => {
+    content.classList.toggle('is-active', content.id === tab);
+  });
+}
+
 
 });

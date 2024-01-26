@@ -156,10 +156,12 @@
 
   <main>
 
-    <section class="sub-mv sub-mv--campaign">
-      <div class="sub-mv__inner">
-        <h1 class="sub-mv__title">Campaign</h1>
-      </div>
+    <section class="sub-mv">
+      <picture class="sub-mv__picture">
+        <source srcset="./assets/images/common/sub-mv-campaign-pc.jpg" media="(min-width: 768px)" type="image/jpg">
+        <img src="./assets/images/common/sub-mv-campaign.jpg" alt="深海に漂う二匹の色鮮やかな黄色のサカナたちの画像" loading="lazy">
+      </picture>
+      <h1 class="sub-mv__title">Campaign</h1>
     </section>
 
     <div class="breadcrumb layout-breadcrumb">
@@ -178,25 +180,23 @@
     </div>
 
     <div class="page-campaign layout-page-campaign">
-      <div class="page-campaign__inner">
+      <div class="page-campaign__inner inner">
 
         <div class="page-campaign__category-list category-list">
-          <div class="category-list__inner">
-            <ul class="category-list__items">
-              <li class="category-list__item is-active">
-                <a href="#">ALL</a>
-              </li>
-              <li class="category-list__item">
-                <a href="#">ライセンス講習</a>
-              </li>
-              <li class="category-list__item">
-                <a href="#">ファンダイビング</a>
-              </li>
-              <li class="category-list__item">
-                <a href="#">体験ダイビング</a>
-              </li>
-            </ul>
-          </div>
+          <ul class="category-list__items">
+            <li class="category-list__item is-active">
+              <a href="#">ALL</a>
+            </li>
+            <li class="category-list__item">
+              <a href="#">ライセンス講習</a>
+            </li>
+            <li class="category-list__item">
+              <a href="#">ファンダイビング</a>
+            </li>
+            <li class="category-list__item">
+              <a href="#">体験ダイビング</a>
+            </li>
+          </ul>
         </div>
 
         <ul class="page-campaign__cards">

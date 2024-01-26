@@ -1,14 +1,5 @@
 @use "global" as *;
 
-.home__container {
-  position: relative;
-
-  @include mq(md) {
-    display: flex;
-    column-gap: rem(80);
-  }
-}
-
 .home__container::before {
   content: '';
   position: absolute;
@@ -42,15 +33,6 @@
 
   @include mq(md) {
     padding: 0;
-  }
-}
-
-.home__cards {
-
-  @include mq(md) {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: rem(80) rem(40);
   }
 }
 

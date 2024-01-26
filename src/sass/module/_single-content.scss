@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.single-content p {
+.single-content > * {
   font-family: $base-font-family;
   font-size: rem(16);
   font-weight: $regular;
@@ -9,15 +9,7 @@
   margin-top: rem(24);
 
   @include mq(md) {
-  margin-top: rem(39);
-  }
-}
-
-.single-content div {
-  margin-top: rem(24);
-
-  @include mq(md) {
-    margin-top: rem(40);
+  margin-top: rem(40);
   }
 }
 
@@ -28,12 +20,7 @@
 }
 
 .single-content ul {
-  margin-top: rem(23);
   padding-left: rem(26);
-
-  @include mq(md) {
-    margin-top: rem(40);
-  }
 }
 
 .single-content ul li span {
@@ -42,16 +29,18 @@
   font-weight: $regular;
   line-height: 1.7;
   color: $font-color;
-  position: relative;
+  
   display: inline-block;
 }
 
-.single-content ul li span::before {
+.single-content ul li {
+  position: relative;
+}
+
+.single-content ul li::before {
   content: '';
   position: absolute;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  top: rem(3);
   left: rem(-26);
   background-image: url(../images/common/single-starfish.png);
   background-size: cover;

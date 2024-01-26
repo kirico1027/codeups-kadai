@@ -9,6 +9,7 @@
 
   @include mq(md) {
     display: flex;
+    flex-wrap: wrap;
     gap: rem(16) rem(32);
   }
 }
@@ -39,11 +40,11 @@
   font-size: rem(14);
   font-weight: $regular;
   line-height: calc(22/14);
-  color: #408f95;
-  border: 1px solid #408f95;
-  /*width: rem(162);*/
+  color: $accent-color;
+  border: 1px solid $accent-color;
   padding: rem(5) 0;
   text-align: center;
+  transition: 0.3s;
 
   @include mq(md) {
     width: rem(162);
@@ -51,7 +52,12 @@
 }
 
 .category-list__item.is-active {
-  background-color: #408f95;
+  background-color: $accent-color;
+  color: $white;
+}
+
+.category-list__item:hover {
+  background-color: $accent-color;
   color: $white;
 }
 

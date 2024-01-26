@@ -19,6 +19,7 @@
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
   text-align: center;
   cursor: pointer;
+  transition: 0.3s;
 
   @include mq(md) {
     max-width: rem(300);
@@ -43,6 +44,7 @@
   background-size: contain;
   width: rem(60);
   height: rem(60);
+  transition: 0.3s;
 
   @include mq(md) {
     display: block;
@@ -62,16 +64,24 @@
 }
 
 
-.tab-menu__item:nth-child(1).is-active span::before {
+.tab-menu__item:nth-child(1).is-active span::before,
+.tab-menu__item:nth-child(1):hover span::before {
   background-image: url("../images/common/tab-menu01-white.svg");
 }
 
-.tab-menu__item:nth-child(2).is-active span::before {
+.tab-menu__item:nth-child(2).is-active span::before,
+.tab-menu__item:nth-child(2):hover span::before {
   background-image: url("../images/common/tab-menu02-white.svg");
 }
 
-.tab-menu__item:nth-child(3).is-active span::before {
+.tab-menu__item:nth-child(3).is-active span::before,
+.tab-menu__item:nth-child(3):hover span::before{
   background-image: url("../images/common/tab-menu03-white.svg");
+}
+
+.tab-menu__item:hover {
+  color: $white;
+  background-color: $accent-color;
 }
 
 .tab-menu__item.is-active {

@@ -1,19 +1,5 @@
 @use "global" as *;
 
-.page-campaign__inner {
-  width: 100%;
-  padding-right: $padding-sp;
-  padding-left: $padding-sp;
-  margin-inline: auto;
-  max-width: rem(655);
-
-  @include mq("md") {
-    max-width: $inner + strip-unit($padding-pc) * 2;
-    padding-right: $padding-pc;
-    padding-left: $padding-pc;
-  }
-}
-
 .page-campaign__cards {
   display: grid;
   gap: rem(40) rem(40);

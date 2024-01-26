@@ -48,16 +48,15 @@
 }
 
 .faq-item__question::after {
-  transform: rotate(90deg);
+  transform: rotate(0deg);
 }
 
 .faq-item__question.is-open::after {
-  transform: rotate(0deg);
+  transform: rotate(90deg);
 }
 
 .faq-item__answer {
   padding: rem(24) rem(16) rem(21);
-  display: none;
   font-size: rem(16);
   background-color: $white;
   line-height: 1.45;

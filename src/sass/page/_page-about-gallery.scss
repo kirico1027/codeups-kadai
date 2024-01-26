@@ -8,7 +8,7 @@
 
   @include mq(md) {
     grid-template-columns: 45.555% 7.4% auto;
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: auto;
     margin-top: rem(80);
     grid-auto-flow: dense;
   }
@@ -32,24 +32,38 @@
   }
 }
 
-.page-about-gallery__container img:nth-child(6n+1),
-.page-about-gallery__container img:nth-child(6n+6) {
-  aspect-ratio: 345/523;
-
+.page-about-gallery__image:nth-child(6n+1),
+.page-about-gallery__image:nth-child(6n+6) {
+  
   @include mq(md) {
     grid-column: span 1;
     grid-row: span 2;
   }
 }
 
-.page-about-gallery__container img:nth-child(6n+2),
-.page-about-gallery__container img:nth-child(6n+3),
-.page-about-gallery__container img:nth-child(6n+4),
-.page-about-gallery__container img:nth-child(6n+5) {
-  aspect-ratio: 345/219;
+.page-about-gallery__image:nth-child(6n+1) img,
+.page-about-gallery__image:nth-child(6n+6) img {
+  aspect-ratio: 345/523;
+  object-fit: cover;
+  height: auto;
+}
+
+.page-about-gallery__image:nth-child(6n+2),
+.page-about-gallery__image:nth-child(6n+3),
+.page-about-gallery__image:nth-child(6n+4),
+.page-about-gallery__image:nth-child(6n+5) {
 
   @include mq(md) {
     grid-column: span 2;
     grid-row: span 1;
   }
+}
+
+.page-about-gallery__image:nth-child(6n+2) img,
+.page-about-gallery__image:nth-child(6n+3) img,
+.page-about-gallery__image:nth-child(6n+4) img,
+.page-about-gallery__image:nth-child(6n+5) img {
+  aspect-ratio: 345/219;
+  object-fit: cover;
+  height: auto;
 }
