@@ -1,0 +1,70 @@
+@use "global" as *;
+
+.confirmation__inner.inner {
+  @include mq("md") {
+    max-width: rem(850);
+  }
+}
+
+.confirmation__container {
+  position: relative;
+}
+
+.confirmation__container::before {
+  content: '';
+  position: absolute;
+  width: calc((120 / 375) * 100vw);
+  height: calc((55 / 375) * 100vw);
+  background-image: url(../images/common/fish-illustration-right.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  left: calc(50% - min(46vw, rem(620)));
+  top: rem(-30);
+
+  @include mq(md) {
+    width: rem(301);
+    height: rem(138);
+    left: calc(50% - min(48vw, rem(620)));
+    top: rem(-75);
+    z-index: 0;
+  }
+}
+
+.confirmation__title {
+  font-family: $base-font-family;
+  font-size: rem(24);
+  font-weight: $medium;
+  line-height: 1;
+
+  @include mq(md) {
+    font-size: rem(32);
+  }
+}
+
+.confirmation__content {
+  font-family: $base-font-family;
+  font-size: rem(16);
+  font-weight: $regular;
+  line-height: calc(32/16);
+  color: $title-color;
+  margin-top: rem(45);
+
+  @include mq(md) {
+    margin-top: rem(47);
+  }
+}
+
+.confirmation__box {
+  margin-top: rem(32);
+}
+
+.confirmation__list {
+  list-style-type: decimal;
+  margin-left: rem(22);
+}
+
+.confirmation__item {
+padding-left: rem(1);
+}
+

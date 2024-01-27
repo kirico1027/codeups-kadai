@@ -194,6 +194,7 @@ $(document).ready(function () {
 });
 
 
+// タブについて
 // タブメニューのクリック時の処理（jQuery）
 $('.js-tab-menu').on('click', function () {
   const number = $(this).data('number');
@@ -204,7 +205,11 @@ $('.js-tab-menu').on('click', function () {
 
   // タブコンテンツのクラスを切り替える
   $('.js-tab-content').removeClass('is-active');
-  $('#' + number).addClass('is-active');
+
+  // クリックされたタブに対応するコンテンツが存在する場合にのみクラスを追加
+  if (number) {
+    $('#' + number).addClass('is-active');
+  }
 });
 
 // URLから 'tab' パラメータの値を取得
@@ -215,14 +220,15 @@ const tab = url.searchParams.get('tab');
 const tabMenus = document.querySelectorAll('.js-tab-menu');
 const tabContents = document.querySelectorAll('.js-tab-content');
 
-// 'tab' パラメータが null または未定義の場合、デフォルトで最初のタブをアクティブにする
-if (!tab) {
-  const firstTabMenu = tabMenus[0];
-  const firstTabContent = tabContents[0];
+// 最初のタブとコンテンツをアクティブにする
+const firstTabMenu = $('.js-tab-menu:first');
+const firstTabContent = $('#' + firstTabMenu.data('number'));
 
-  firstTabMenu.classList.add('is-active');
-  firstTabContent.classList.add('is-active');
-} else {
+firstTabMenu.addClass('is-active');
+firstTabContent.addClass('is-active');
+
+// 'tab' パラメータが null または未定義の場合、デフォルトで最初のタブをアクティブにする
+if (tab) {
   tabMenus.forEach(element => {
     const number = element.getAttribute('data-number');
     element.classList.toggle('is-active', number === tab);
