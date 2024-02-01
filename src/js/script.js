@@ -124,9 +124,6 @@ jQuery(function ($) {
   });
 });
 
-
-
-
 // アーカイブ
 $(function () {
   $(".js-accordion__box .js-accordion__month").css(
@@ -194,50 +191,33 @@ $(document).ready(function () {
 });
 
 
-// タブについて
-// タブメニューのクリック時の処理（jQuery）
-$('.js-tab-menu').on('click', function () {
-  const number = $(this).data('number');
+// タブ
+$(document).ready(function() {
+  // URLから 'tab' パラメータを取得
+  const tab = new URL(window.location.href).searchParams.get('tab');
 
-  // タブメニューのクラスを切り替える
-  $('.js-tab-menu').removeClass('is-active');
-  $(this).addClass('is-active');
+  // タブメニューのクリックイベント
+  $('.js-tab-menu').on('click', function () {
+    const number = $(this).data('number');
 
-  // タブコンテンツのクラスを切り替える
-  $('.js-tab-content').removeClass('is-active');
+    // アクティブクラスの切り替え
+    $('.js-tab-menu').removeClass('is-active');
+    $(this).addClass('is-active');
+    $('.js-tab-content').removeClass('is-active');
+    if (number) {
+      $('#' + number).addClass('is-active');
+    }
+  });
 
-  // クリックされたタブに対応するコンテンツが存在する場合にのみクラスを追加
-  if (number) {
-    $('#' + number).addClass('is-active');
+  // 初期状態またはURLパラメータに基づくタブのアクティブ化
+  if (tab) {
+    // URLパラメータが存在する場合、該当するタブをアクティブにする
+    $('.js-tab-menu[data-number="' + tab + '"]').click();
+  } else {
+    // URLパラメータがない場合、最初のタブをアクティブにする
+    $('.js-tab-menu:first').click();
   }
 });
-
-// URLから 'tab' パラメータの値を取得
-const url = new URL(window.location.href);
-const tab = url.searchParams.get('tab');
-
-// タブメニューとコンテンツのクラスを設定
-const tabMenus = document.querySelectorAll('.js-tab-menu');
-const tabContents = document.querySelectorAll('.js-tab-content');
-
-// 最初のタブとコンテンツをアクティブにする
-const firstTabMenu = $('.js-tab-menu:first');
-const firstTabContent = $('#' + firstTabMenu.data('number'));
-
-firstTabMenu.addClass('is-active');
-firstTabContent.addClass('is-active');
-
-// 'tab' パラメータが null または未定義の場合、デフォルトで最初のタブをアクティブにする
-if (tab) {
-  tabMenus.forEach(element => {
-    const number = element.getAttribute('data-number');
-    element.classList.toggle('is-active', number === tab);
-  });
-
-  tabContents.forEach(content => {
-    content.classList.toggle('is-active', content.id === tab);
-  });
-}
 
 
 });

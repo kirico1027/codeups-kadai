@@ -26,7 +26,7 @@
   left: rem(-28);
   display: inline-block;
   border-style: solid;
-  border-width: 10px 0px 10px 18px;
+  border-width: rem(10) 0px rem(10) rem(18);
   border-color: transparent transparent transparent $accent-color ;
   transition: all 0.3s;
 }
@@ -62,6 +62,6 @@
   left: rem(-26);
   display: inline-block;
   border-style: solid;
-  border-width: 10px 0px 10px 18px;
+  border-width: rem(10) 0px rem(10) rem(18);
   border-color: transparent transparent transparent $accent-color;
 }
