@@ -32,6 +32,10 @@
   }
 }
 
+.page-about-gallery__image {
+  cursor: pointer;
+}
+
 .page-about-gallery__image:nth-child(6n+1),
 .page-about-gallery__image:nth-child(6n+6) {
   
