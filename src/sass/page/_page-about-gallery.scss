@@ -38,7 +38,7 @@
 
 .page-about-gallery__image:nth-child(6n+1),
 .page-about-gallery__image:nth-child(6n+6) {
-  
+
   @include mq(md) {
     grid-column: span 1;
     grid-row: span 2;
